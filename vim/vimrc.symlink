@@ -1,0 +1,196 @@
+" ===================
+" James' VIM settings
+" ===================
+
+
+
+" Basics
+" ======
+
+" Settings for VIM, not Vi
+set nocompatible
+
+" Infect VIM with plugins!
+call pathogen#infect()
+
+" Go go gadget SYNTAX HIGHLIGHTING!
+syntax on
+
+" Get VIM to detect the type of file in the editor
+filetype on
+
+" Get VIM to load filetype specific features and indentation styles
+filetype plugin indent on
+
+" My favorite theme <3
+colorscheme railscasts
+
+" Change the railscast background to be darker
+highlight Normal guibg=#151515
+
+" The default popup menu colors are HORRENDUS! For the love of all that is
+" good in this world, change them to not-horrible!
+highlight Pmenu ctermbg=238 guibg=#202020
+highlight PmenuSel gui=bold guibg=#303030 guifg=White
+
+
+
+" Font
+" ====
+
+" I don't know why each OS has it's own font format, but that's how it is.
+if has('win32')
+    set guifont=DejaVu_Sans_Mono:h10
+elseif has('mac')
+    set guifont=DejaVu\ Sans\ Mono:h12
+elseif has('unix')
+    set guifont=DejaVu\ Sans\ Mono\ 10
+endif
+
+
+
+" Basic editor options
+" ====================
+
+" Show the state of commands being entered
+set showcmd
+
+" Show the location of the cursor
+set ruler
+
+" Do line wrapping...
+set wrap
+
+" ...but do it sensibly, like around whole words
+set linebreak
+
+" When line wrapping, wrap through the line number column. This makes it easy
+" to know when a particular line is wrapped or not.
+set cpoptions+=n
+
+" Don't automatically format text to a limited width
+set textwidth=0
+
+" Turn tabs into spaces. I'm not partial, but MANY others are.
+set expandtab
+
+" If there are tabs, then they should be 4 spaces wide
+set tabstop=4
+
+" Tools will indend to 4 spaces (think >> and <<)
+set shiftwidth=4
+
+" If tabs are used in a position that isn't aligned with tabstop, then it will
+" insert the correct number of spaces needed to get to the tabstop
+set softtabstop=4
+
+" Tools will insert the correct amount of tabs for autoindenting
+set shiftround
+
+" Be smart about handling tabs, even when they are handled with spaces
+set smarttab
+
+" Nothing is more annoying than doing everything by hand, like indentation
+set autoindent
+
+" Put the line numbers on the left hand side.
+" I handle this in numbers.vim to switch between 'number' and 'relativenumber'
+" thus these are disabled in here. If you aren't using that plugin, then
+" uncomment the setting of your choice.
+"set number
+"set relativenumber
+
+" Highlight the matching brace, paren, bracket, etc. Helpful when in a nested
+" part of the code and you are trying to match these things correctly.
+set showmatch
+
+" VIM should remember what I did for a LOOOOOONG time...
+set history=1000
+
+" ...as well as be VERY forgiving
+set undolevels=1000
+
+" I don't want to worry about the case when searching or doing something
+" else where case can trip me up...
+set ignorecase
+
+" ...except in those cases when I really DO want to know the case of what I'm
+" searching for.
+set smartcase
+
+
+
+" Ruby
+" ====
+
+" Turn on the OmniComplete functionality in Ruby
+autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
+
+" Set the right code completion settings
+autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
+autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
+autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
+
+" Ruby's community likes 2 space tabs, so we adjust accordingly
+autocmd FileType ruby,eruby set tabstop=2
+autocmd FileType ruby,eruby set shiftwidth=2
+autocmd FileType ruby,eruby set softtabstop=2
+
+
+
+" C++
+" ===
+
+" Tag files inform VIM on how to do code completion. Point to these files
+autocmd FileType cpp set tags+=~/.vim/tags/cpp
+
+" C++ OmniComplete stuff
+autocmd Filetype cpp let OmniCpp_NamespaceSearch = 1
+autocmd Filetype cpp let OmniCpp_GlobalScopeSearch = 1
+autocmd Filetype cpp let OmniCpp_ShowAccess = 1
+autocmd Filetype cpp let OmniCpp_ShowPrototypeInAbbr = 1
+autocmd Filetype cpp let OmniCpp_MayCompleteDot = 1
+autocmd Filetype cpp let OmniCpp_MayCompleteArrow = 1
+autocmd Filetype cpp let OmniCpp_MayCompleteScope = 1
+autocmd Filetype cpp let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
+autocmd Filetype cpp au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
+autocmd Filetype cpp set completeopt=menuone,menu,longest,preview
+
+
+
+" HTML
+" ====
+
+" Ragtag helps with HTML tags
+autocmd FileType html,eruby let g:ragtag_global_maps = 1
+
+" HTML can be VERY nested, so two space tabs make sense (at least to me...)
+autocmd FileType html,eruby set tabstop=2
+autocmd FileType html,eruby set shiftwidth=2
+autocmd FileType html,eruby set softtabstop=2
+
+
+
+" CSS
+" ===
+
+" Match what I'm doing with HTML
+autocmd FileType css,sass set tabstop=2
+autocmd FileType css,sass set shiftwidth=2
+autocmd FileType css,sass set softtabstop=2
+
+
+
+" Markdown
+" ========
+
+" Turn on spellcheck
+autocmd FileType markdown set spell
+
+
+
+" Custom commands
+" ===============
+
+" Change the directory to the current file's location
+command Cdph cd %:p:h
