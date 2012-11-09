@@ -118,6 +118,18 @@ set ignorecase
 " searching for.
 set smartcase
 
+" Always show the status bar
+set laststatus=2
+
+" Turn on the wildmenu and be more productive TODAY! Only $FREE.99!
+set wildmenu
+
+" Make wildmenu GLORIOUS! Seriously!
+set wildmode=list:longest,full
+
+" I hate it when I scroll and the cursor follows me around. I SAID STAY HOME!
+set nostartofline
+
 
 
 " Ruby
