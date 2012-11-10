@@ -9,4 +9,12 @@ These are my configuration dotfiles and their respective settings. I am inspired
 
 There's a lot of other people's code here, and I want to keep it updated regularly and automatically. Thus I make extensive use of `git submodules` so I'm always on the cutting edge. This is especially true with my VIM plugins.
 
-This currently is in very early alpha, so I don't have an easy way to install it yet. I'll be writing a script or something that makes this easier. For the time being, you are on your own...
+To install, copy the following:
+
+    git clone git://github.com/jamesleonis/dotfiles.git ~/.dotfiles
+    cd ~/.dotfiles
+    scripts/install
+
+###Requirements
+
+You will need to have `git` and `ruby` installed for this to work.
