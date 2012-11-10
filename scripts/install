@@ -1,0 +1,6 @@
+#!/bin/sh
+#
+# For first time installs
+
+git submodule update --init
+rake install
