@@ -1,3 +1,5 @@
+# Shamelessly stolen from @holman, and then modified by me
+
 require 'rake'
 
 desc "Hook our dotfiles into system-standard positions."
@@ -52,6 +54,11 @@ task :uninstall do
     end
 
   end
+end
+
+desc "Update our submodules"
+task :update_submodules do
+  `git submodule foreach git pull origin master`
 end
 
 task :default => 'install'
