@@ -26,8 +26,10 @@ Just a little bookkeeping for the plugins I have installed and those I'm experim
 * supertab
 * nerdcommenter
 * vim-fugitive
+* NrrwRgn
 
 ###Plugins/Dotfiles I'm looking at
 
 * [tpope](https://github.com/tpope/tpope)
 * [janus](https://github.com/carlhuda/janus)
+* [ryanb](https://github.com/ryanb/dotfiles)
