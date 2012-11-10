@@ -127,8 +127,11 @@ set wildmenu
 " Make wildmenu GLORIOUS! Seriously!
 set wildmode=list:longest,full
 
-" I hate it when I scroll and the cursor follows me around. I SAID STAY HOME!
+" I hate it when I scroll and the cursor isn't in the column I left it. I SAID STAY!
 set nostartofline
+
+" Try and keep some lines visible around the cursor when scrolling
+set scrolloff=3
 
 
 
