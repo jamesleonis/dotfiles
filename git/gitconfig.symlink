@@ -6,3 +6,9 @@
 [core]
 	editor = vim
     excludesfile = ~/.gitignore
+[diff]
+    tool = default-difftool
+[difftool]
+    prompt = false
+[difftool "default-difftool"]
+    cmd = default-difftool.sh $LOCAL $REMOTE
