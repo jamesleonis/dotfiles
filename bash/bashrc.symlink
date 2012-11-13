@@ -1,0 +1,9 @@
+# James' bashrc file
+
+export CLICOLOR=1
+
+# I'm easy like that.
+PS1='\$ '
+
+# Add my own personal executable directory
+export PATH="$HOME/bin:$PATH"
