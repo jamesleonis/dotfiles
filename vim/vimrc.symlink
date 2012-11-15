@@ -100,6 +100,10 @@ set autoindent
 "set number
 "set relativenumber
 
+" Set the line number column width to 5 so it's not resizing itself when
+" switching from relativenumber to number
+set numberwidth=5
+
 " Highlight the matching brace, paren, bracket, etc. Helpful when in a nested
 " part of the code and you are trying to match these things correctly.
 set showmatch

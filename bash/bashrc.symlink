@@ -2,6 +2,9 @@
 
 export CLICOLOR=1
 
+# MMM, Delicious VIM in my terminal. Have some!
+set -o vi
+
 # I'm easy like that.
 PS1='\$ '
 
