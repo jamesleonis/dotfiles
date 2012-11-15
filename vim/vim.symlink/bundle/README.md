@@ -15,6 +15,7 @@ Just a little bookkeeping for the plugins I have installed and those I'm experim
 * vim-ruby
 * vim-rails
 * vim-railscasts-theme
+* vim-fugitive
 
 ###Investigating
 
@@ -25,7 +26,6 @@ Just a little bookkeeping for the plugins I have installed and those I'm experim
 * vim-speeddating
 * supertab
 * nerdcommenter
-* vim-fugitive
 * NrrwRgn
 
 ###Plugins/Dotfiles I'm looking at
