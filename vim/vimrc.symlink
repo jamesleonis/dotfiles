@@ -139,6 +139,14 @@ set scrolloff=3
 
 
 
+" Diff
+" ====
+
+" Set diff mode to always split vertically and show filler lines
+set diffopt=filler,vertical
+
+
+
 " Ruby
 " ====
 
