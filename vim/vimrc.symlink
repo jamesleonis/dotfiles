@@ -42,7 +42,7 @@ highlight PmenuSel gui=bold guibg=#303030 guifg=White
 if has('win32')
     set guifont=DejaVu_Sans_Mono:h10
 elseif has('mac')
-    set guifont=DejaVu\ Sans\ Mono:h12
+    set guifont=DejaVu\ Sans\ Mono:h14
 elseif has('unix')
     set guifont=DejaVu\ Sans\ Mono\ 10
 endif
@@ -212,7 +212,7 @@ autocmd FileType css,sass set softtabstop=2
 " ========
 
 " Turn on spellcheck
-autocmd FileType markdown set spell
+autocmd FileType markdown,text set spell
 
 
 
