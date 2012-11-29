@@ -8,5 +8,10 @@ set -o vi
 # I'm easy like that.
 PS1='\$ '
 
+# My god I can see forever!
+export HISTSIZE=1000000
+export HISTFILESIZE=1000000
+shopt -s histappend
+
 # Add my own personal executable directory
 export PATH="$HOME/.bin:$PATH"

@@ -1,0 +1,10 @@
+# James' inputrc file
+
+# don't ask me about how many tab completion items there are unless it's truely huge
+set completion-query-items 500
+
+# Set case insensitivity because I'm lazy
+set completion-ignore-case on
+
+# sometimes I don't know what I'm looking for
+set show-all-if-ambiguous on
