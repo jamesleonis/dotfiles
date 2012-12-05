@@ -5,10 +5,11 @@
 	email = me@jamesleonis.com
 [core]
 	editor = vim
-    excludesfile = ~/.gitignore
+	excludesfile = ~/.gitignore
+	pager = less
 [diff]
-    tool = default-difftool
+	tool = default-difftool
 [difftool]
-    prompt = false
+	prompt = false
 [difftool "default-difftool"]
-    cmd = default-difftool.sh $LOCAL $REMOTE
+	cmd = default-difftool.sh $LOCAL $REMOTE
