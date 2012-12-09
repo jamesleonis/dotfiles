@@ -226,3 +226,6 @@ autocmd FileType markdown,text set spell
 
 " Change the directory to the current file's location
 command Cdph cd %:p:h
+
+" Switch to absolute line numbers when the focus is lost (GUI only :sadface: )
+autocmd FocusLost * set number
