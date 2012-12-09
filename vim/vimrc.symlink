@@ -22,8 +22,13 @@ filetype on
 " Get VIM to load filetype specific features and indentation styles
 filetype plugin indent on
 
-" My favorite theme <3
-colorscheme railscasts
+if has('gui_running')
+    " My favorite theme <3
+    colorscheme railscasts
+else
+    " Make my terminal MUCH better
+    colorscheme jellybeans
+endif
 
 " Change the railscast background to be darker
 highlight Normal guibg=#151515
