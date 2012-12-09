@@ -27,6 +27,7 @@ Just a little bookkeeping for the plugins I have installed and those I'm experim
 * supertab
 * nerdcommenter
 * NrrwRgn
+* syntastic
 
 ###Plugins/Dotfiles I'm looking at
 
