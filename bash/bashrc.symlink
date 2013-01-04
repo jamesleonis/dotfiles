@@ -15,3 +15,6 @@ shopt -s histappend
 
 # Add my own personal executable directory
 export PATH="$HOME/.bin:$PATH"
+
+# Add git autocomplete to bash
+source "$HOME/.bash/git-completion.bash"
