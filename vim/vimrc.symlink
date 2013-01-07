@@ -144,6 +144,13 @@ set scrolloff=3
 
 
 
+" Netrw
+" =====
+
+let g:netrw_list_hide= '\.swp$,\~,\.git,\.DS_Store'
+
+
+
 " Diff
 " ====
 
