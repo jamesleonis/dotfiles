@@ -47,7 +47,7 @@ highlight PmenuSel gui=bold guibg=#303030 guifg=White
 if has('win32')
     set guifont=DejaVu_Sans_Mono:h10
 elseif has('mac')
-    set guifont=DejaVu\ Sans\ Mono:h14
+    set guifont=DejaVu\ Sans\ Mono:h12
 elseif has('unix')
     set guifont=DejaVu\ Sans\ Mono\ 10
 endif
