@@ -25,13 +25,12 @@ filetype plugin indent on
 if has('gui_running')
     " My favorite theme <3
     colorscheme railscasts
+    " Change the railscast background to be darker
+    highlight Normal guibg=#151515
 else
     " Make my terminal MUCH better
     colorscheme jellybeans
 endif
-
-" Change the railscast background to be darker
-highlight Normal guibg=#151515
 
 " The default popup menu colors are HORRENDUS! For the love of all that is
 " good in this world, change them to not-horrible!
