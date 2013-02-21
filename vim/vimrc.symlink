@@ -115,6 +115,13 @@ set numberwidth=5
 " part of the code and you are trying to match these things correctly.
 set showmatch
 
+" Highlight search matches. Use 'noh(lsearch)" to temporarily disable
+" highlighting. Use 'set nohlsearch' to turn this off for the session.
+set hlsearch
+
+" Search incrementally, incredibly!
+set incsearch
+
 " VIM should remember what I did for a LOOOOOONG time...
 set history=1000
 
