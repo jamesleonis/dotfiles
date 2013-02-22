@@ -1,9 +1,6 @@
 [submodule "vim/vim.symlink/bundle/numbers.vim"]
 	path = vim/vim.symlink/bundle/numbers.vim
 	url = git://github.com/myusuf3/numbers.vim.git
-[submodule "vim/vim.symlink/bundle/vim-omnicppcomplete"]
-	path = vim/vim.symlink/bundle/vim-omnicppcomplete
-	url = git://github.com/yandy/vim-omnicppcomplete.git
 [submodule "vim/vim.symlink/bundle/vim-markdown"]
 	path = vim/vim.symlink/bundle/vim-markdown
 	url = git://github.com/tpope/vim-markdown.git

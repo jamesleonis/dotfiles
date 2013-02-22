@@ -10,7 +10,6 @@ Just a little bookkeeping for the plugins I have installed and those I'm experim
 * vim-endwise
 * vim-ragtag
 * vim-markdown
-* vim-omnicppcomplete
 * vim-surround
 * vim-ruby
 * vim-rails
@@ -20,6 +19,8 @@ Just a little bookkeeping for the plugins I have installed and those I'm experim
 ###Investigating
 
 * ctrlp.vim
+* clang_complete.vim
+* clang_indexer.vim
 * vim-vividchalk
 * vim-easymotion
 * vim-unimpaired

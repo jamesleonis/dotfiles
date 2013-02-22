@@ -191,19 +191,7 @@ autocmd FileType ruby,eruby set softtabstop=2
 
 " Tag files inform VIM on how to do code completion. Point to these files
 autocmd FileType cpp set tags+=~/.vim/tags/cpp
-
-" C++ OmniComplete stuff
-autocmd Filetype cpp let OmniCpp_NamespaceSearch = 1
-autocmd Filetype cpp let OmniCpp_GlobalScopeSearch = 1
-autocmd Filetype cpp let OmniCpp_ShowAccess = 1
-autocmd Filetype cpp let OmniCpp_ShowPrototypeInAbbr = 1
-autocmd Filetype cpp let OmniCpp_MayCompleteDot = 1
-autocmd Filetype cpp let OmniCpp_MayCompleteArrow = 1
-autocmd Filetype cpp let OmniCpp_MayCompleteScope = 1
-autocmd Filetype cpp let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
-autocmd Filetype cpp au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
-autocmd Filetype cpp set completeopt=menuone,menu,longest,preview
-
+" TODO: Add clang options here
 
 
 " HTML
