@@ -15,6 +15,8 @@ To install, copy the following:
     cd ~/.dotfiles
     scripts/install
 
+To update the plugins, do a `git pull` and then run `rake update_submodules`. Yeah, I'm easy like that.
+
 ###Requirements
 
 You will need to have `git` and `ruby` installed for this to work.
