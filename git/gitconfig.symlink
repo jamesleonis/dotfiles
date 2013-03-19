@@ -13,3 +13,5 @@
 	prompt = false
 [difftool "default-difftool"]
 	cmd = default-difftool.sh $LOCAL $REMOTE
+[alias]
+	timeline = log --decorate --oneline --graph
