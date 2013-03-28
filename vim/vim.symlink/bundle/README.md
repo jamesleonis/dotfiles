@@ -15,10 +15,10 @@ Just a little bookkeeping for the plugins I have installed and those I'm experim
 * vim-rails
 * vim-railscasts-theme
 * vim-fugitive
+* ctrlp.vim
 
 ###Investigating
 
-* ctrlp.vim
 * clang_complete.vim
 * clang_indexer.vim
 * vim-vividchalk
