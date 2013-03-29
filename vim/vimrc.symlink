@@ -183,8 +183,7 @@ autocmd FileType ruby,eruby set softtabstop=2
 " ===
 
 " Tag files inform VIM on how to do code completion. Point to these files
-autocmd FileType cpp set tags+=~/.vim/tags/cpp
-" TODO: Add clang options here
+autocmd FileType cpp let g:SuperTabDefaultcompletionType = "context"
 
 " In C++ I want tabs, not spaces
 autocmd FileType cpp set noexpandtab
