@@ -9,7 +9,7 @@ set -o vi
 PS1='\$ '
 
 # My god I can see forever!
-export HISTSIZE=1000000
+export HISTSIZE=1000000000
 export HISTFILESIZE=1000000
 shopt -s histappend
 
