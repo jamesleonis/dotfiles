@@ -15,3 +15,5 @@
 	cmd = default-difftool.sh $LOCAL $REMOTE
 [alias]
 	timeline = log --decorate --oneline --graph
+	diffp = diff --patience
+	addp = add --patch
