@@ -17,3 +17,5 @@
 	timeline = log --decorate --oneline --graph
 	diffp = diff --patience
 	addp = add --patch
+[push]
+	default = current
