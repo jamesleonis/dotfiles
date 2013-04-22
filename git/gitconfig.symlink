@@ -7,15 +7,11 @@
 	editor = vim
 	excludesfile = ~/.gitignore
 	pager = less
-[diff]
-	tool = default-difftool
-[difftool]
-	prompt = false
-[difftool "default-difftool"]
-	cmd = default-difftool.sh $LOCAL $REMOTE
 [alias]
 	timeline = log --decorate --oneline --graph
 	diffp = diff --patience
 	addp = add --patch
 [push]
 	default = current
+[merge]
+	tool = vimdiff
