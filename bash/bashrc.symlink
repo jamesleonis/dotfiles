@@ -18,3 +18,9 @@ export PATH="$HOME/.bin:$PATH"
 
 # Add git autocomplete to bash
 source "$HOME/.bash/git-completion.bash"
+
+# Make code searching less painful
+function find-in-code ()
+{
+    grep -lir --exclude=*.{cod,obj,lib,exe,bsc,sbr,ilk,pdb,map,dll,log,swp,ncb} $1 *
+}
