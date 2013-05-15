@@ -10,7 +10,7 @@
 [alias]
 	timeline = log --decorate --oneline --graph
 	diffp = diff --patience
-	addp = add --patch
+	ap = add --patch
 [push]
 	default = current
 [merge]
