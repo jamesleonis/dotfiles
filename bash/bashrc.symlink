@@ -1,6 +1,7 @@
 # James' bashrc file
 
 export CLICOLOR=1
+export TERM=xterm-256color
 
 # MMM, Delicious VIM in my terminal. Have some!
 set -o vi
