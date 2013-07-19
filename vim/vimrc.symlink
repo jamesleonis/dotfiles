@@ -103,7 +103,7 @@ set autoindent
 " Set the line number column width to 5 so it's not resizing itself when
 " switching from relativenumber to number
 " Yes, I work with files that are > 10,000 LOC
-se numberwidth=6
+set numberwidth=6
 
 " Highlight the matching brace, paren, bracket, etc. Helpful when in a nested
 " part of the code and you are trying to match these things correctly.
