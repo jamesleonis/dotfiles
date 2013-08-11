@@ -1,7 +1,11 @@
 # James' bashrc file
+# This is the portable configuration that is supposed to work across my
+# different systems, so this must be as generic as possible.
+# Machine specific configuration should go into bash_profile.
 
 export CLICOLOR=1
 export TERM=xterm-256color
+export BASH_LOADED=1
 
 # MMM, Delicious VIM in my terminal. Have some!
 set -o vi
@@ -25,3 +29,7 @@ function find-in-code ()
 {
     grep -lir --exclude=*.{cod,obj,lib,exe,bsc,sbr,ilk,pdb,map,dll,log,swp,ncb,idb,vcxproj*,vcproj*} $1 *
 }
+
+# Load in other platform specific configuration files
+[[ -s ~/.profile ]] && source ~/.profile
+[[ -s ~/.bash_profile ]] && source ~/.bash_profile
