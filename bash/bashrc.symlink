@@ -30,6 +30,5 @@ function find-in-code ()
     grep -lir --exclude=*.{cod,obj,lib,exe,bsc,sbr,ilk,pdb,map,dll,log,swp,ncb,idb,vcxproj*,vcproj*} $1 *
 }
 
-# Load in other platform specific configuration files
-[[ -s ~/.profile ]] && source ~/.profile
-[[ -s ~/.bash_profile ]] && source ~/.bash_profile
+# Load in machine specific configurations
+[[ -s ~/.bashrc.local ]] && source ~/.bashrc.local
