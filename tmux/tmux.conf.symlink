@@ -1,0 +1,9 @@
+set-option -g prefix `
+# set-option - prefix C-a
+
+unbind-key C-b
+bind-key C-a last-window
+bind-key ` last-window
+bind-key a send-prefix
+
+set -g base-index 1
