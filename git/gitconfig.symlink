@@ -13,6 +13,8 @@
 	ap = add --patch
 [push]
 	default = current
+[diff]
+	tool = vimdiff
 [merge]
 	tool = vimdiff
 	conflictstyle = diff3
