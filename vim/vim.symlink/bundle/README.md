@@ -13,22 +13,24 @@ Just a little bookkeeping for the plugins I have installed and those I'm experim
 * vim-surround
 * vim-ruby
 * vim-rails
-* vim-railscasts-theme
 * vim-fugitive
 * ctrlp.vim
+* vim-json
+* jellybeans
+* clang_complete
+* supertab
+* ctrlp
 
 ###Investigating
 
-* clang_complete.vim
 * clang_indexer.vim
-* vim-vividchalk
 * vim-easymotion
 * vim-unimpaired
 * vim-speeddating
-* supertab
 * nerdcommenter
 * NrrwRgn
 * syntastic
+* YouCompleteMe
 
 ###Plugins/Dotfiles I'm looking at
 
