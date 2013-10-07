@@ -15,6 +15,7 @@
 	default = current
 [diff]
 	tool = vimdiff
+	algorithm = patience
 [merge]
 	tool = vimdiff
 	conflictstyle = diff3
