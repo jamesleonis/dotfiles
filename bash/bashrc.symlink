@@ -24,6 +24,12 @@ export PATH="$HOME/.bin:$PATH"
 # Add git autocomplete to bash
 source "$HOME/.bash/git-completion.bash"
 
+# Make navigating directories less painful
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
 # Make code searching less painful
 function find-in-code ()
 {
