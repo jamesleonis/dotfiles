@@ -30,6 +30,8 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
+function mkcd () { mkdir -p "$@" && eval cd "\"\$$#\""; }
+
 # Make code searching less painful
 function find-in-code ()
 {
