@@ -182,7 +182,6 @@ autocmd FileType cpp let g:clang_complete_copen = 1
 " The preview window isn't useful, so let's disable it
 autocmd FileType cpp set completeopt-=preview
 autocmd FileType cpp let g:SuperTabDefaultCompletionType = 'context'
-autocmd FileType cpp let g:clang_library_path = '/usr/lib/'
 
 " In C++ I want tabs, not spaces
 autocmd FileType cpp set noexpandtab
