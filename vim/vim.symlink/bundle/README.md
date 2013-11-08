@@ -6,7 +6,6 @@ Just a little bookkeeping for the plugins I have installed and those I'm experim
 ###Installed
 
 * Pathogen
-* numbers.vim
 * vim-endwise
 * vim-ragtag
 * vim-markdown
