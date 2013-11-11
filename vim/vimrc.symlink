@@ -94,11 +94,9 @@ set smarttab
 set autoindent
 
 " Put the line numbers on the left hand side.
-"   I handle this in numbers.vim to switch between 'number' and 'relativenumber'
-"   thus these are disabled in here. If you aren't using that plugin, then
-"   uncomment the setting of your choice.
-"set number
-"set relativenumber
+"    Vim 7.4 supports both options. Yay!
+set number
+set relativenumber
 
 " Set the line number column width to 5 so it's not resizing itself when
 " switching from relativenumber to number
