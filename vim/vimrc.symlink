@@ -143,6 +143,9 @@ set nostartofline
 " Try and keep some lines visible around the cursor when scrolling
 set scrolloff=3
 
+" Set backspace key to act like it's modern counterpart
+set backspace+=start,eol,indent
+
 
 
 " Netrw
