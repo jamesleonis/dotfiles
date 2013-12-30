@@ -10,13 +10,12 @@
 	autocrlf = input
 [alias]
 	timeline = log --decorate --oneline --graph
-	diffp = diff --patience
 	ap = add --patch
 [push]
 	default = current
 [diff]
 	tool = vimdiff
-	algorithm = patience
+	algorithm = histogram
 [merge]
 	tool = vimdiff
 	conflictstyle = diff3
