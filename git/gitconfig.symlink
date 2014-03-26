@@ -11,6 +11,7 @@
 [alias]
 	timeline = log --decorate --oneline --graph
 	ap = add --patch
+	mnf = merge --no-ff
 [push]
 	default = current
 [diff]
