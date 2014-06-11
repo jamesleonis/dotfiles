@@ -37,6 +37,9 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
+# Alias ls for color and append '/' for folders, '@' for symbolic links, etc
+alias ls="ls --color -F"
+
 function mkcd () { mkdir -p "$@" && eval cd "\"\$$#\""; }
 
 # Make code searching less painful
