@@ -1,7 +1,7 @@
 # James' bashrc file
 # This is the portable configuration that is supposed to work across my
 # different systems, so this must be as generic as possible.
-# Machine specific configuration should go into bash_profile.
+# Machine specific configuration should go into bashrc.local
 
 export CLICOLOR=1
 export TERM=xterm-256color
@@ -10,10 +10,12 @@ export BASH_LOADED=1
 # MMM, Delicious VIM in my terminal. Have some!
 set -o vi
 
-# I'm easy like that.
+# Change my terminal indicator if I'm root or not
 if [ $(id -u) -eq 0 ]; then
+    # Green $ for regular use
     export PS1='\[\033[0;31m\]#\[\033[0;37m\] '
 else
+    # Red # for root and sudo
     export PS1='\[\033[0;32m\]$\[\033[0;37m\] '
     export SUDO_PS1='\[\033[0;31m\]#\[\033[0;37m\] '
 fi
