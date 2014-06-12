@@ -31,12 +31,6 @@
 [submodule "vim/vim.symlink/bundle/vim-ctrlp"]
 	path = vim/vim.symlink/bundle/vim-ctrlp
 	url = git@github.com:kien/ctrlp.vim.git
-[submodule "vim/vim.symlink/bundle/supertab"]
-	path = vim/vim.symlink/bundle/supertab
-	url = git@github.com:ervandew/supertab.git
-[submodule "vim/vim.symlink/bundle/clang_complete"]
-	path = vim/vim.symlink/bundle/clang_complete
-	url = git@github.com:Rip-Rip/clang_complete.git
 [submodule "vim/vim.symlink/bundle/vim-json"]
 	path = vim/vim.symlink/bundle/vim-json
 	url = git@github.com:elzr/vim-json.git
