@@ -16,6 +16,7 @@ Just a little bookkeeping for the plugins I have installed and those I'm experim
 * vim-json
 * jellybeans
 * ctrlp
+* YouCompleteMe
 
 ###Investigating
 
@@ -25,7 +26,6 @@ Just a little bookkeeping for the plugins I have installed and those I'm experim
 * nerdcommenter
 * NrrwRgn
 * syntastic
-* YouCompleteMe
 
 ###Plugins/Dotfiles I'm looking at
 
