@@ -2,5 +2,17 @@
 #
 # For first time installs
 
+eval "git --version" > /dev/null
+if [ $? -ne 0 ]; then
+    echo "Git not installed. Aborting"
+    exit $?
+fi
+
+eval "ruby --version" > /dev/null
+if [ $? -ne 0 ]; then
+    echo "Ruby not installed. Aborting"
+    exit $?
+fi
+
 git submodule update --init
 rake install
