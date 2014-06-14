@@ -19,6 +19,11 @@ sudo apt-get -y install vim curl git terminator tmux ssh xclip wget
 # Install KeyPass
 sudo apt-get -y install keepass2 xdotool
 
+bin_dir="$HOME/bin"
+if [ ! -d $bin_dir ]; then
+    mkdir $bin_dir
+fi
+
 # get Dropbox
 if [ ! -d "$HOME/.dropbox-dist" ]; then
     prev_dir=`pwd`
@@ -95,4 +100,4 @@ fi
 sudo apt-get -y install chromium-browser vlc
 
 # Cleanup
-unset dotfile_dir local_profile prev_dir
+unset dotfile_dir local_profile prev_dir bin_dir

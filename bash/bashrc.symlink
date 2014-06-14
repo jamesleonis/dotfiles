@@ -10,6 +10,12 @@ export BASH_LOADED=1
 # MMM, Delicious VIM in my terminal. Have some!
 set -o vi
 
+# Add my bin directory to the path
+bin_dir="$HOME/bin"
+if [ -d $bin_dir ]; then
+    export PATH="$bin_dir:$PATH"
+fi
+
 # Change my terminal indicator if I'm root or not
 if [ $(id -u) -eq 0 ]; then
     # Green $ for regular use
@@ -24,9 +30,6 @@ fi
 export HISTSIZE=1000000000
 export HISTFILESIZE=1000000
 shopt -s histappend
-
-# Add my own personal executable directory
-export PATH="$HOME/.bin:$PATH"
 
 # Add git autocomplete to bash
 source "$HOME/.bash/git-completion.bash"
