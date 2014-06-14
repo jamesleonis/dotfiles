@@ -14,5 +14,15 @@ if [ $? -ne 0 ]; then
     exit $?
 fi
 
-git submodule update --init
+eval "clang --version" > /dev/null
+if [ $? -ne 0 ]; then
+    echo "Clang not installed. Aborting"
+    exit $?
+fi
+
+
+git submodule update --init --recursive
 rake install
+cd $HOME/.vim/bundle/YouCompleteMe/
+./install.sh --clang-completer
+cd -
