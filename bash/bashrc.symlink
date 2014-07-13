@@ -41,7 +41,12 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
 # Alias ls for color and append '/' for folders, '@' for symbolic links, etc
-alias ls="ls --color -F"
+if [ "$(uname)" == "Darwin" ]; then
+    # OSX is weird with ls
+    alias ls="ls -G -F"
+else
+    alias ls="ls --color -F"
+fi
 
 function mkcd () { mkdir -p "$@" && eval cd "\"\$$#\""; }
 
