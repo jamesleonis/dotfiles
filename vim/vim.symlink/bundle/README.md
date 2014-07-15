@@ -17,6 +17,8 @@ Just a little bookkeeping for the plugins I have installed and those I'm experim
 * jellybeans
 * ctrlp
 * YouCompleteMe
+* vim-fireplace
+* vim-clojure-static
 
 ###Investigating
 
