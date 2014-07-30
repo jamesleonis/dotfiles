@@ -43,3 +43,9 @@
 [submodule "vim/vim.symlink/bundle/vimroom"]
 	path = vim/vim.symlink/bundle/vimroom
 	url = https://github.com/mikewest/vimroom.git
+[submodule "vim/vim.symlink/bundle/vim-arduino-ino"]
+	path = vim/vim.symlink/bundle/vim-arduino-ino
+	url = https://github.com/jplaut/vim-arduino-ino.git
+[submodule "vim/vim.symlink/bundle/vim-arduino-syntax"]
+	path = vim/vim.symlink/bundle/vim-arduino-syntax
+	url = https://github.com/sudar/vim-arduino-syntax.git
