@@ -46,3 +46,6 @@
 [submodule "vim/vim.symlink/bundle/vim-arduino-syntax"]
 	path = vim/vim.symlink/bundle/vim-arduino-syntax
 	url = https://github.com/sudar/vim-arduino-syntax.git
+[submodule "vim/vim.symlink/bundle/emmet-vim"]
+	path = vim/vim.symlink/bundle/emmet-vim
+	url = https://github.com/mattn/emmet-vim.git
