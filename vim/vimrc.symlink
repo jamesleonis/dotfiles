@@ -201,9 +201,6 @@ autocmd FileType cpp set noexpandtab
 " HTAs are special HTML files used to build Windows GUIs
 autocmd BufNewFile,BufRead *.hta set filetype=html
 
-" Ragtag helps with HTML tags
-autocmd FileType html,eruby let g:ragtag_global_maps = 1
-
 " HTML can be VERY nested, so two space tabs make sense (at least to me...)
 autocmd FileType html,eruby set tabstop=2
 autocmd FileType html,eruby set shiftwidth=2
