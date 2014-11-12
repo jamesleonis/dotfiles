@@ -49,3 +49,6 @@
 [submodule "vim/vim.symlink/bundle/emmet-vim"]
 	path = vim/vim.symlink/bundle/emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
+[submodule "vim/vim.symlink/bundle/vim-haml"]
+	path = vim/vim.symlink/bundle/vim-haml
+	url = https://github.com/tpope/vim-haml
