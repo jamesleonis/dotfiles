@@ -52,3 +52,9 @@
 [submodule "vim/vim.symlink/bundle/vim-haml"]
 	path = vim/vim.symlink/bundle/vim-haml
 	url = https://github.com/tpope/vim-haml
+[submodule "vim/vim.symlink/bundle/vim-node"]
+	path = vim/vim.symlink/bundle/vim-node
+	url = https://github.com/moll/vim-node.git
+[submodule "vim/vim.symlink/bundle/vim-javascript-syntax"]
+	path = vim/vim.symlink/bundle/vim-javascript-syntax
+	url = https://github.com/jelera/vim-javascript-syntax
