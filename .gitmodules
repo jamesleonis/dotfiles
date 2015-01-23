@@ -58,3 +58,6 @@
 [submodule "vim/vim.symlink/bundle/vim-javascript-syntax"]
 	path = vim/vim.symlink/bundle/vim-javascript-syntax
 	url = https://github.com/jelera/vim-javascript-syntax
+[submodule "vim/vim.symlink/bundle/vim-javascript"]
+	path = vim/vim.symlink/bundle/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
