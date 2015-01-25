@@ -7,7 +7,6 @@ Just a little bookkeeping for the plugins I have installed and those I'm experim
 
 * Pathogen
 * vim-endwise
-* vim-ragtag
 * vim-markdown
 * vim-surround
 * vim-ruby
@@ -19,6 +18,13 @@ Just a little bookkeeping for the plugins I have installed and those I'm experim
 * YouCompleteMe
 * vim-fireplace
 * vimroom
+* vim-node
+* vim-javascript
+* vim-javascript-syntax
+* vim-arduino-ino
+* vim-arduino-syntax
+* tern-for-vim
+* vim-haml
 
 ###Investigating
 
@@ -34,3 +40,4 @@ Just a little bookkeeping for the plugins I have installed and those I'm experim
 * [tpope](https://github.com/tpope/tpope)
 * [janus](https://github.com/carlhuda/janus)
 * [ryanb](https://github.com/ryanb/dotfiles)
+* [Today I Learned: vim](http://tilvim.com/)
