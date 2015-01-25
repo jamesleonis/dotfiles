@@ -199,22 +199,15 @@ autocmd FileType cpp set softtabstop=4
 " HTAs are special HTML files used to build Windows GUIs
 autocmd BufNewFile,BufRead *.hta set filetype=html
 
-" turn on autocomplete
-autocmd FileType html,eruby set omnifunc=htmlcomplete#CompleteTags
-
 
 
 " CSS
 " ===
 
-autocmd FileType css,sass set omnifunc=csscomplete#CompleteCSS
-
 
 
 " Javascript
 " ==========
-
-autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 
 
 
