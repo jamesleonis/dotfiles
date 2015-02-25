@@ -48,6 +48,11 @@ else
     alias ls="ls --color -F"
 fi
 
+# Useful tmux aliases for managing multiple sessions
+alias tl="tmux list-sessions"
+alias ta="tmux attach"
+alias tat="tmux attach -t"
+
 function mkcd ()
 {
     mkdir -p "$@" && eval cd "\"\$$#\"";
