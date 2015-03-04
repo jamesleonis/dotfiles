@@ -49,6 +49,10 @@ endif
 " Basic editor options
 " ====================
 
+" Kill the alarm bells
+set visualbell
+set noerrorbells
+
 " Show the state of commands being entered
 set showcmd
 
