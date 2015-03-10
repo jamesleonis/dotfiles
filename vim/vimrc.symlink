@@ -197,6 +197,14 @@ autocmd FileType cpp set softtabstop=4
 
 
 
+" PHP
+" ===
+autocmd FileType php set tabstop=4
+autocmd FileType php set shiftwidth=4
+autocmd FileType php set softtabstop=4
+
+
+
 " HTML
 " ====
 
