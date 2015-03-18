@@ -16,15 +16,28 @@ if [ -d $bin_dir ]; then
     export PATH="$bin_dir:$PATH"
 fi
 
-# Change my terminal indicator if I'm root or not
-if [ $(id -u) -eq 0 ]; then
-    # Green $ for regular use
-    export PS1='\[\033[0;31m\]#\[\033[0;37m\] '
-else
-    # Red # for root and sudo
-    export PS1='\[\033[0;32m\]$\[\033[0;37m\] '
-    export SUDO_PS1='\[\033[0;31m\]#\[\033[0;37m\] '
-fi
+# Display prompt (PS1) configuration
+{
+    # Show three red '-'
+    # This visually anchors a command and it's output into blocks.
+    PS1="\[\033[0;31m\]--- "
+
+    # Change my terminal indicator if I'm root or not
+    if [ $(id -u) -eq 0 ]; then
+        # Red # for root and sudo
+        PS1="$PS1\[\033[0;31m\]#"
+    else
+        # Green $ for regular use
+        PS1="$PS1\[\033[0;32m\]$"
+    fi
+
+    # Clear colors back to white for output and other programs
+    PS1="$PS1\[\e[0m\] "
+
+    # Plug it into my session
+    export PS1
+    export SUDO_PS1="$PS1"
+}
 
 # My god I can see forever!
 export HISTSIZE=1000000000
