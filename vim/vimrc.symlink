@@ -191,8 +191,6 @@ autocmd FileType clojure let g:paredit_electric_return = 1
 " Ruby
 " ====
 
-" Ruby's community likes 2 space tabs, so we adjust accordingly
-
 
 
 " C++
@@ -245,6 +243,3 @@ autocmd FileType markdown,text set spell
 
 " Change the directory to the current file's location
 command Cdph cd %:p:h
-
-" Switch to absolute line numbers when the focus is lost (GUI only :sadface: )
-autocmd FocusLost * set number
