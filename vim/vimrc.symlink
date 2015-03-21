@@ -182,6 +182,12 @@ set diffopt=filler,vertical
 
 
 
+" Clojure
+" =======
+autocmd FileType clojure let g:paredit_electric_return = 1
+
+
+
 " Ruby
 " ====
 
