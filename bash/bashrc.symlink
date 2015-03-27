@@ -48,6 +48,9 @@ export HISTIGNORE="&:ls:[bf]g:exit:pwd:clear:git status:git timeline:[ \t]*"
 # Add git autocomplete to bash
 source "$HOME/.bash/git-completion.bash"
 
+# Add lein autocomplete to bash
+source "$HOME/.bash/lein-completion.bash"
+
 # Make navigating directories less painful
 alias ..="cd .."
 alias ...="cd ../.."
