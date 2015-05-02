@@ -95,7 +95,7 @@ set shiftround
 set smarttab
 
 " Nothing is more annoying than doing everything by hand, like indentation
-set autoindent
+set smartindent
 
 " Put the line numbers on the left hand side.
 "    Vim 7.4 supports both options. Yay!
