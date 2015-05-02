@@ -161,6 +161,9 @@ set backspace+=start,eol,indent
 set completeopt-=preview
 let g:ycm_extra_conf_globlist = ['~/programming/*','!~/*']
 
+" There is a crash in YCM for vagrant files. Disable for now.
+autocmd BufNewFile,BufRead Vagrantfile let g:ycm_auto_trigger = 0
+
 
 
 " CtrlP
