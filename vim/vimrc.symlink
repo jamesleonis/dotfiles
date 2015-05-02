@@ -155,11 +155,17 @@ set backspace+=start,eol,indent
 
 
 
-" YouCompleteMe settings
-" ======================
+" YouCompleteMe
+" =============
 
 set completeopt-=preview
 let g:ycm_extra_conf_globlist = ['~/programming/*','!~/*']
+
+
+
+" CtrlP
+" =====
+
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)$',
   \ 'file': '\v\.(so|dat|DS_Store|swp|o)$'
