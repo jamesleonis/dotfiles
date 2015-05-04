@@ -56,6 +56,9 @@ set noerrorbells
 " Show the state of commands being entered
 set showcmd
 
+" Allow edited buffers to be hidden
+set hidden
+
 " Allow the mouse in the terminal
 set mouse=a
 
