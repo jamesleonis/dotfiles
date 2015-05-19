@@ -1,5 +1,4 @@
 { :user {:plugins [[cider/cider-nrepl "0.8.2"]
-                   [lein-try "0.4.3"]
-                   [com.jakemccrary/lein-test-refresh "0.7.0"]]
-         :dependencies [[redl "0.2.2"]]
-         :injections [(require '[redl core complete])]}}
+                   [lein-marginalia "0.8.0"]
+                   [lein-ancient "0.6.7"]
+                   [lein-try "0.4.3"]]}}
