@@ -84,18 +84,6 @@ if [ ! -d "$dotfile_dir" ]; then
     cd $prev_dir
 fi
 
-# get BitTorrent Sync
-if [ ! -d "$HOME/.btsync" ]; then
-    #download and install
-    prev_dir=`pwd`
-    mkdir $HOME/.btsync
-    cd $HOME/.btsync
-    wget -O - "http://download-lb.utorrent.com/endpoint/btsync/os/linux-glibc23-x64/track/stable" | tar xzf -
-    mkdir -p $HOME/sync/keys
-    $HOME/.btsync/btsync &
-    cd $prev_dir
-fi
-
 # install other interesting programs
 sudo apt-get -y install chromium-browser vlc
 
