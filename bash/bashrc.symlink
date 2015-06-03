@@ -7,9 +7,6 @@ export CLICOLOR=1
 export TERM=xterm-256color
 export BASH_LOADED=1
 
-# MMM, Delicious VIM in my terminal. Have some!
-set -o vi
-
 # Add my bin directory to the path
 bin_dir="$HOME/bin"
 if [ -d $bin_dir ]; then
