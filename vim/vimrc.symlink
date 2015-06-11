@@ -53,6 +53,10 @@ endif
 set visualbell
 set noerrorbells
 
+" Escape key delay is killing me!
+set timeoutlen=1000
+set ttimeoutlen=100
+
 " Show the state of commands being entered
 set showcmd
 

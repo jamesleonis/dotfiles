@@ -1,6 +1,9 @@
 set-option -g prefix `
 # set-option - prefix C-a
 
+# I need VIM to respond faster.
+set -s escape-time 0
+
 unbind-key C-b
 bind-key C-a last-window
 bind-key ` last-window
