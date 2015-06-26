@@ -5,23 +5,37 @@ Just a little bookkeeping for the plugins I have installed and those I'm experim
 
 ###Installed
 
-* Pathogen
-* vim-markdown
-* vim-surround
-* vim-ruby
-* vim-rails
-* vim-json
+* Vundle
 * jellybeans
 * vim-ctrlp
+* vimroom
+* vim-json
+* vim-haml
 * YouCompleteMe
 * vim-fireplace
-* vimroom
+* paredit
+* vim-clojure-static
+* vim-clojure-highlight
+
+### Deprecated
+
+I've used these plugins in the past, but I don't need them at this time.
+
+#### General
+
+* vim-surround
+
+#### Ruby
+
+* vim-ruby
+* vim-rails
+
+#### Javascript
+
 * vim-node
 * vim-javascript
 * vim-javascript-syntax
 * tern-for-vim
-* vim-haml
-* paredit
 
 ###Investigating
 
