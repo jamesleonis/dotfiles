@@ -6,25 +6,22 @@ Just a little bookkeeping for the plugins I have installed and those I'm experim
 ###Installed
 
 * Pathogen
-* vim-endwise
 * vim-markdown
 * vim-surround
 * vim-ruby
 * vim-rails
-* vim-fugitive
 * vim-json
 * jellybeans
-* ctrlp
+* vim-ctrlp
 * YouCompleteMe
 * vim-fireplace
 * vimroom
 * vim-node
 * vim-javascript
 * vim-javascript-syntax
-* vim-arduino-ino
-* vim-arduino-syntax
 * tern-for-vim
 * vim-haml
+* paredit
 
 ###Investigating
 
