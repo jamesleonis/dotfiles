@@ -10,6 +10,7 @@
   autocrlf = input
 [alias]
   timeline = log --decorate --oneline --graph
+  ta = !sh -c 'git timeline --all'
   ap = add --patch
   mnf = merge --no-ff
   yesterday = log --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cD) %C(bold blue)<%an>%Creset' --since yesterday --author me@jamesleonis.com
