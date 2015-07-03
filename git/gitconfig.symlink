@@ -1,24 +1,24 @@
 [color]
-	ui = true
+  ui = true
 [user]
-	name = James Leonis
-	email = me@jamesleonis.com
+  name = James Leonis
+  email = me@jamesleonis.com
 [core]
-	editor = vim
-	excludesfile = ~/.gitignore
-	pager = less
-	autocrlf = input
+  editor = vim
+  excludesfile = ~/.gitignore
+  pager = less
+  autocrlf = input
 [alias]
-	timeline = log --decorate --oneline --graph
-	ap = add --patch
-	mnf = merge --no-ff
+  timeline = log --decorate --oneline --graph
+  ap = add --patch
+  mnf = merge --no-ff
   yesterday = log --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cD) %C(bold blue)<%an>%Creset' --since yesterday --author me@jamesleonis.com
   dc = diff --cached
 [push]
-	default = current
+  default = current
 [diff]
-	tool = vimdiff
-	algorithm = histogram
+  tool = vimdiff
+  algorithm = histogram
 [merge]
-	tool = vimdiff
-	conflictstyle = diff3
+  tool = vimdiff
+  conflictstyle = diff3
