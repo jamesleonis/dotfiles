@@ -46,6 +46,16 @@ endif
 
 
 
+" Backup and swap files
+" =====================
+
+set backup
+set swapfile
+set backupdir=~/.vim/backup
+set directory=~/.vim/backup
+
+
+
 " Basic editor options
 " ====================
 
