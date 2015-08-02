@@ -40,7 +40,7 @@ fi
 export HISTSIZE=1000000000
 export HISTFILESIZE=1000000
 shopt -s histappend
-export HISTIGNORE="&:ls:[bf]g:exit:pwd:clear:git status:git timeline:[ \t]*"
+export HISTIGNORE="&:ls:[bf]g:exit:pwd:clear:git status:[ \t]*"
 
 # Add git autocomplete to bash
 source "$HOME/.bash/git-completion.bash"
