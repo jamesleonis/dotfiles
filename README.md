@@ -5,9 +5,9 @@ These are my configuration dotfiles and their respective settings. I am inspired
 
 [zach]: http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/
 
-###Installation
+### Installation
 
-There's a lot of other people's code here, and I want to keep it updated regularly and automatically. Thus I make extensive use of `git submodules` so I'm always on the cutting edge. This is especially true with my VIM plugins.
+There's a lot of other people's code here, and I want to keep it updated regularly and automatically.
 
 To install, copy the following:
 
@@ -15,8 +15,13 @@ To install, copy the following:
     cd ~/.dotfiles
     scripts/install
 
-To update the plugins, do a `git pull` and then run `rake update_submodules`. Yeah, I'm easy like that.
+The VIM plugins are managed through [Vundle][vundle]. See it's README for how to install/update the plugins.
 
-###Requirements
+NOTE: YouCompleteMe takes a while to install, and still needs to run the `./install.sh`. See the [README][ycm] for specific instructions.
+
+[vundle]: https://github.com/VundleVim/Vundle.vim
+[ycm]: https://github.com/Valloric/YouCompleteMe
+
+### Requirements
 
 You will need to have `git` and `ruby` installed for this to work.
