@@ -16,6 +16,7 @@ Just a little bookkeeping for the plugins I have installed and those I'm experim
 * paredit
 * vim-clojure-static
 * vim-clojure-highlight
+* syntastic
 
 ### Deprecated
 
@@ -44,7 +45,6 @@ I've used these plugins in the past, but I don't need them at this time.
 * vim-speeddating
 * nerdcommenter
 * NrrwRgn
-* syntastic
 
 ###Plugins/Dotfiles I'm looking at
 
