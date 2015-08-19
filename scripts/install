@@ -21,8 +21,8 @@ if [ $? -ne 0 ]; then
 fi
 
 
-git submodule update --init --recursive
 rake install
+vim -c VundleUpdate -c quitall
 cd $HOME/.vim/bundle/YouCompleteMe/
 ./install.sh --clang-completer
 cd -
