@@ -48,6 +48,12 @@ source "$HOME/.bash/git-completion.bash"
 # Add lein autocomplete to bash
 source "$HOME/.bash/lein-completion.bash"
 
+## NOTE: Homebrew installs bash completions in it's Cellar.
+##       Use the following in your bashrc.local
+#if [ -f `brew --prefix`/etc/bash_completion.d ]; then
+#  . `brew --prefix`/etc/bash_completion.d
+#fi
+
 # Make navigating directories less painful
 alias ..="cd .."
 alias ...="cd ../.."
