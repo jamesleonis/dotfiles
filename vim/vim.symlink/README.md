@@ -3,7 +3,7 @@ VIM Plugins
 
 Just a little bookkeeping for the plugins I have installed and those I'm experimenting with.
 
-###Installed
+### Installed
 
 * Vundle
 * jellybeans
@@ -17,6 +17,9 @@ Just a little bookkeeping for the plugins I have installed and those I'm experim
 * vim-clojure-static
 * vim-clojure-highlight
 * syntastic
+* vim-node
+* vim-javascript
+* vim-javascript-syntax
 
 ### Deprecated
 
@@ -33,12 +36,9 @@ I've used these plugins in the past, but I don't need them at this time.
 
 #### Javascript
 
-* vim-node
-* vim-javascript
-* vim-javascript-syntax
 * tern-for-vim
 
-###Investigating
+### Investigating
 
 * vim-easymotion
 * vim-unimpaired
@@ -46,7 +46,7 @@ I've used these plugins in the past, but I don't need them at this time.
 * nerdcommenter
 * NrrwRgn
 
-###Plugins/Dotfiles I'm looking at
+### Plugins/Dotfiles I'm looking at
 
 * [tpope](https://github.com/tpope/tpope)
 * [janus](https://github.com/carlhuda/janus)
