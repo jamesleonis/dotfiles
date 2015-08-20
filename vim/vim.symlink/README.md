@@ -20,6 +20,7 @@ Just a little bookkeeping for the plugins I have installed and those I'm experim
 * vim-node
 * vim-javascript
 * vim-javascript-syntax
+* tern-for-vim
 
 ### Deprecated
 
@@ -33,10 +34,6 @@ I've used these plugins in the past, but I don't need them at this time.
 
 * vim-ruby
 * vim-rails
-
-#### Javascript
-
-* tern-for-vim
 
 ### Investigating
 

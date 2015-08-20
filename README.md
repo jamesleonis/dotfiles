@@ -17,7 +17,9 @@ To install, copy the following:
 
 The VIM plugins are managed through [Vundle][vundle]. See it's README for how to install/update the plugins.
 
-NOTE: YouCompleteMe takes a while to install, and still needs to run the `./install.sh`. See the [README][ycm] for specific instructions.
+Additionally, YouCompleteMe takes a while to install, and still needs to run the `./install.sh` in it's directory. See the [README][ycm] for specific instructions.
+
+Tern for JS also requires `npm install` to be run in it's directory.
 
 [vundle]: https://github.com/VundleVim/Vundle.vim
 [ycm]: https://github.com/Valloric/YouCompleteMe
@@ -25,3 +27,7 @@ NOTE: YouCompleteMe takes a while to install, and still needs to run the `./inst
 ### Requirements
 
 You will need to have `git` and `ruby` installed for this to work.
+
+To use Tern, you will need Node.js and NPM.
+
+To use YouCompleteMe with C family languages, you need the Clang installed

@@ -52,6 +52,8 @@ Plugin 'moll/vim-node'
 """ JS highlighting + syntax
 Plugin 'pangloss/vim-javascript'
 Plugin 'jelera/vim-javascript-syntax'
+""" Better autocomplete with YCM
+Plugin 'marijnh/tern_for_vim'
 
 """ END PLUGIN LIST
 

@@ -20,9 +20,11 @@ if [ $? -ne 0 ]; then
     exit $?
 fi
 
-
 rake install
 vim -c VundleUpdate -c quitall
 cd $HOME/.vim/bundle/YouCompleteMe/
 ./install.sh --clang-completer
+cd $HOME/.vim/bundle/tern_for_vim
+npm install
+
 cd -
