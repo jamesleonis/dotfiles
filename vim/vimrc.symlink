@@ -223,6 +223,11 @@ set scrolloff=3
 " Set backspace key to act like it's modern counterpart
 set backspace+=start,eol,indent
 
+" Whitepace
+highlight TrailingWhitespace ctermbg=red
+autocmd InsertLeave * match TrailingWhitespace /\s\+$/
+autocmd InsertEnter * match TrailingWhitespace //
+
 
 
 " YouCompleteMe
@@ -307,7 +312,12 @@ autocmd BufNewFile,BufRead *.hta set filetype=html
 " Javascript
 " ==========
 autocmd FileType javascript let tern_show_argument_hints = 'on_move'
-autocmd FileType javascript let tern_show_signature_in_pum = 1
+autocmd filetype javascript let tern_show_signature_in_pum = 1
+autocmd filetype javascript highlight HangingOpenBraces ctermbg=red
+"" Only apply this when in Normal mode
+autocmd InsertLeave javascript match HangingOpenBraces /^\s*{/
+"" Clear the highlighting in Insert mode, because that's annoying
+autocmd InsertEnter javascript match HangingOpenBraces //
 
 
 
