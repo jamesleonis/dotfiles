@@ -235,6 +235,7 @@ autocmd InsertEnter * match TrailingWhitespace //
 
 set completeopt-=preview
 let g:ycm_extra_conf_globlist = ['~/code/*','!~/*']
+let g:ycm_min_num_of_chars_for_completion = 4
 
 " There is a crash in YCM for vagrant files. Disable for now.
 autocmd BufNewFile,BufRead Vagrantfile let g:ycm_auto_trigger = 0
