@@ -4,8 +4,13 @@
 # Machine specific configuration should go into bashrc.local
 
 export CLICOLOR=1
-export TERM=xterm-256color
 export BASH_LOADED=1
+
+if [[ $TERM == xterm ]]; then
+  TERM=xterm-256color
+elif [[ $TERM == screen ]]; then
+  TERM=screen-256color
+fi
 
 # Add my bin directory to the path
 bin_dir="$HOME/bin"
