@@ -56,6 +56,9 @@ Plugin 'jelera/vim-javascript-syntax'
 """ Better autocomplete with YCM
 Plugin 'marijnh/tern_for_vim'
 
+" Go plugins
+Plugin 'fatih/vim-go'
+
 """ END PLUGIN LIST
 
 " Finish up the plugin initialization
