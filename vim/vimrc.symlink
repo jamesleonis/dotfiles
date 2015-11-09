@@ -227,6 +227,9 @@ set scrolloff=3
 " Set backspace key to act like it's modern counterpart
 set backspace+=start,eol,indent
 
+" Show me the 80 character limit, even if I ignore it now and then
+set colorcolumn=80
+
 " Whitepace
 highlight TrailingWhitespace ctermbg=red
 autocmd InsertLeave * match TrailingWhitespace /\s\+$/
