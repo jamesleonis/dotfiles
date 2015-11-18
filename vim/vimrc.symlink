@@ -17,7 +17,7 @@ set runtimepath+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " Vundle must be initialized first
-Plugin 'gmarik/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 
 """ BEGIN PLUGIN LIST
 
