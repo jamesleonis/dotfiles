@@ -6,3 +6,12 @@
 
 .ycm_extra_conf*
 tags
+
+# Sensitive files
+# https://github.com/ChALkeR/notes/blob/master/Do-not-underestimate-credentials-leaks.md
+.ssh
+.npmrc
+.muttrc
+.netrc
+config.json
+config.gypi
