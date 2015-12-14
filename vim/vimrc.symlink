@@ -318,7 +318,8 @@ autocmd BufNewFile,BufRead *.hta set filetype=html
 
 " Javascript
 " ==========
-autocmd FileType javascript let tern_show_argument_hints = 'on_move'
+autocmd FileType javascript let tern_show_argument_hints = 'on_hold'
+autocmd FileType javascript set updatetime=1000
 autocmd filetype javascript let tern_show_signature_in_pum = 1
 autocmd filetype javascript let g:tern_request_timeout = 0.4
 autocmd filetype javascript highlight HangingOpenBraces ctermbg=red
