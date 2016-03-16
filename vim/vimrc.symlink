@@ -29,14 +29,15 @@ Plugin 'mikewest/vimroom'
 Plugin 'elzr/vim-json'
 " includes SASS settings I like.
 Plugin 'tpope/vim-haml'
-" C++ support functions
-""" Remember to compile with C support (in the YCM folder)
-""" ./install.sh --clang-completer
-Plugin 'Valloric/YouCompleteMe'
 " Syntastic for error checking from the sidebar
 Plugin 'scrooloose/syntastic'
 
-" Clojure plugins
+" C++
+""" Remember to compile with C support (in the YCM folder)
+""" ./install.py --clang-completer
+Plugin 'Valloric/YouCompleteMe'
+
+" Clojure
 """ Repl + interaction in vim
 Plugin 'tpope/vim-fireplace'
 """ Slurp, Barf, and other structural editing
@@ -47,7 +48,7 @@ Plugin 'guns/vim-clojure-static'
 Plugin 'guns/vim-clojure-highlight'
 Plugin 'venantius/vim-cljfmt'
 
-" JS plugins
+" JS
 """ Node.js love
 Plugin 'moll/vim-node'
 """ JS highlighting + syntax
