@@ -22,7 +22,7 @@ Plugin 'VundleVim/Vundle.vim'
 """ BEGIN PLUGIN LIST
 
 " CtrlP is a must have file utility
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 " great plugin for editing longform text
 Plugin 'mikewest/vimroom'
 " Friendlier editing of JSON
@@ -55,9 +55,6 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'jelera/vim-javascript-syntax'
 """ Better autocomplete with YCM
 Plugin 'marijnh/tern_for_vim'
-
-" Go plugins
-Plugin 'fatih/vim-go'
 
 """ END PLUGIN LIST
 
