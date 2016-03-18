@@ -273,6 +273,7 @@ set diffopt=filler,vertical
 
 " Clojure
 " =======
+autocmd BufNewFile,BufRead *.boot set filetype=clojure
 autocmd FileType clojure let g:paredit_electric_return = 1
 
 
