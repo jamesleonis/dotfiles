@@ -1,2 +1,3 @@
 (set-env!
- :dependencies '[[cljfmt "0.3.0"]])
+ :dependencies '[[org.clojure/clojure "1.8.0" :scope "provided"]
+                 [cljfmt "0.3.0"]])
