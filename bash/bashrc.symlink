@@ -93,5 +93,11 @@ function find-in-code ()
     grep -lir --exclude=*.{cod,obj,lib,exe,bsc,sbr,ilk,pdb,map,dll,log,swp,ncb,idb,vcxproj*,vcproj*} $1 *
 }
 
+function purge-docker ()
+{
+  docker rm $(docker ps -aq)
+  docker rmi -f $(docker images -a -q)
+}
+
 # Load in machine specific configurations
 [[ -s ~/.bashrc.local ]] && source ~/.bashrc.local
