@@ -35,7 +35,8 @@ Plugin 'scrooloose/syntastic'
 " C++
 """ Remember to compile with C support (in the YCM folder)
 """ ./install.py --clang-completer
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
+""" NVIM doesn't play nice with YCM
 
 " Clojure
 """ Repl + interaction in vim
@@ -238,11 +239,11 @@ autocmd InsertEnter * match TrailingWhitespace //
 " YouCompleteMe
 " =============
 
-set completeopt-=preview
-let g:ycm_extra_conf_globlist = ['~/code/*','!~/*']
+"set completeopt-=preview
+"let g:ycm_extra_conf_globlist = ['~/code/*','!~/*']
 
-" There is a crash in YCM for vagrant files. Disable for now.
-autocmd BufNewFile,BufRead Vagrantfile let g:ycm_auto_trigger = 0
+""" There is a crash in YCM for vagrant files. Disable for now.
+"autocmd BufNewFile,BufRead Vagrantfile let g:ycm_auto_trigger = 0
 
 
 
