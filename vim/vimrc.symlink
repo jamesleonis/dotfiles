@@ -289,8 +289,6 @@ autocmd FileType clojure let g:paredit_electric_return = 1
 " C++
 " ===
 
-" In C++ I want tabs, not spaces
-autocmd FileType cpp set noexpandtab
 autocmd FileType cpp set tabstop=4
 autocmd FileType cpp set shiftwidth=4
 autocmd FileType cpp set softtabstop=4
