@@ -2,6 +2,17 @@
 
 require 'rake'
 
+task :install_vim_plugin_module do
+  plugin_module = "Vundle.vim"
+  plugin_module_path = "#{ENV["HOME"]}/.vim/bundle/#{plugin_module}"
+
+  if ! File.exists?(plugin_module_path)
+    `git clone https://github.com/VundleVim/Vundle.vim.git #{plugin_module_path}`
+  else
+    print "'#{plugin_module}' already installed.\n"
+  end
+end
+
 desc "Hook our dotfiles into system-standard positions."
 task :install do
   linkables = Dir.glob('*/**{.symlink}')
