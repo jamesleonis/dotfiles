@@ -14,7 +14,7 @@ task :install_vim_plugin_module do
 end
 
 desc "Hook our dotfiles into system-standard positions."
-task :install do
+task :install_dot_files do
   linkables = Dir.glob('*/**{.symlink}')
 
   skip_all = false
@@ -47,7 +47,7 @@ task :install do
   end
 end
 
-task :uninstall do
+task :uninstall_dot_files do
 
   Dir.glob('**/*.symlink').each do |linkable|
 
@@ -58,13 +58,15 @@ task :uninstall do
     if File.symlink?(target)
       FileUtils.rm(target)
     end
-    
+
     # Replace any backups made during installation
     if File.exists?("#{ENV["HOME"]}/.#{file}.backup")
-      `mv "$HOME/.#{file}.backup" "$HOME/.#{file}"` 
+      `mv "$HOME/.#{file}.backup" "$HOME/.#{file}"`
     end
 
   end
 end
 
-task :default => 'install'
+task :install_all => [:install_dot_files, :install_vim_plugin_module]
+
+task :default => :install_all
