@@ -35,7 +35,8 @@ Plugin 'scrooloose/syntastic'
 " C++
 """ Remember to compile with C support (in the YCM folder)
 """ ./install.py --clang-completer
-Plugin 'Valloric/YouCompleteMe'
+""NOTE: Not in use anymore
+"Plugin 'Valloric/YouCompleteMe'
 
 " Clojure
 """ Repl + interaction in vim
