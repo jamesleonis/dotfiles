@@ -32,6 +32,10 @@ Plugin 'tpope/vim-haml'
 " Syntastic for error checking from the sidebar
 Plugin 'scrooloose/syntastic'
 
+" Solidity
+""" When I'm on an Ether(eum) binge
+Plugin 'tomlion/vim-solidity'
+
 " C++
 """ Remember to compile with C support (in the YCM folder)
 """ ./install.py --clang-completer
