@@ -13,11 +13,12 @@ To install, copy the following:
 
     git clone git://github.com/jamesleonis/dotfiles.git ~/.dotfiles
     cd ~/.dotfiles
-    scripts/install
+    git submodule update --init
+    ./scripts/link-dotfiles.sh
 
-The VIM plugins are managed through [Vundle][vundle]. See it's README for how to install/update the plugins.
+The VIM plugins are managed through [Vundle][vundle]. Once the submodules are updated and the dotfiles linked, you can install it with this command:
 
-Additionally, YouCompleteMe takes a while to install, and still needs to run the `./install.sh` in it's directory. See the [README][ycm] for specific instructions.
+    vim -E -s -S $HOME/.vimrc "+VundleInstall" "+qa"
 
 Tern for JS also requires `npm install` to be run in it's directory.
 
@@ -26,8 +27,6 @@ Tern for JS also requires `npm install` to be run in it's directory.
 
 ### Requirements
 
-You will need to have `git` and `ruby` installed for this to work.
+You will need to have `git` installed for this to work.
 
 To use Tern, you will need Node.js and NPM.
-
-To use YouCompleteMe with C family languages, you need the Clang installed
