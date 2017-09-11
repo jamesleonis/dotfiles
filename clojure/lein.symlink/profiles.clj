@@ -1,4 +1,5 @@
-{ :user {:dependencies [[cljfmt "0.5.6"]
+{ :user {:dependencies [[org.clojure/clojure "1.8.0" :scope "provided"]
+                        [cljfmt "0.5.6"]
                         [org.clojure/tools.namespace "0.3.0-alpha3"]]
          :plugins [[cider/cider-nrepl "0.13.0"]
                    [lein-exec "0.3.5"]
