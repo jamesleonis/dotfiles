@@ -1,8 +1,4 @@
-{ :user {:dependencies [[org.clojure/clojure "1.8.0" :scope "provided"]
-                        [cljfmt "0.5.6"]
-                        [org.clojure/tools.namespace "0.3.0-alpha3"]]
-         :plugins [[cider/cider-nrepl "0.13.0"]
-                   [lein-exec "0.3.5"]
-                   [lein-cljfmt "0.5.6"]
-                   [lein-ancient "0.6.7"]
-                   [lein-try "0.4.3"]]}}
+{:user {:dependencies [[org.clojure/clojure "1.8.0" :scope "provided"]
+                       [org.clojure/tools.namespace "0.3.0-alpha4"]]
+        :plugins [[cider/cider-nrepl "0.15.0"]
+                  [lein-ancient "0.6.7"]]}}
