@@ -255,7 +255,7 @@ autocmd BufNewFile,BufRead Vagrantfile let g:ycm_auto_trigger = 0
 " =====
 
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](\.(git|hg|svn)|node_modules|target)$',
+  \ 'dir':  '\v[\/](\.(git|hg|svn)|node_modules|target|js/compiled)$',
   \ 'file': '\v\.(so|dat|DS_Store|swp|o)$'
   \ }
 
