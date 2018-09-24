@@ -9,6 +9,10 @@ export BASH_LOADED=1
 # Set vim keybindings in the terminal
 set -o vi
 
+# Set the editor to VIM
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
 if [[ $TERM == xterm ]]; then
   TERM=xterm-256color
 elif [[ $TERM == screen ]]; then
