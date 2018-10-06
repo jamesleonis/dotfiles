@@ -13,16 +13,10 @@ set -o vi
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
-alias fbt="FBTERM=1 fbterm"
-
 if [[ $TERM == xterm ]]; then
   TERM=xterm-256color
 elif [[ $TERM == screen ]]; then
   TERM=screen-256color
-elif [[ -n $FBTERM ]]; then
-  echo -en "\e]P7dedede"
-  export TERM=fbterm
-  unset FBTERM
 fi
 
 # Add my bin directory to the path
