@@ -1,1 +1,8 @@
-{}
+{:aliases
+ {
+  ; invoke with clojure -A:rebel
+  ; NOTE: Don't use with the 'clj' or another readline-based system
+  :rebel {:extra-deps
+          {com.bhauman/rebel-readline {:mvn/version "0.1.4"}}
+          :main-opts ["-m" "rebel-readline.main"]}
+  }}
