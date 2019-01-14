@@ -47,6 +47,8 @@ Plugin 'tomlion/vim-solidity'
 Plugin 'tpope/vim-fireplace'
 """ Slurp, Barf, and other structural editing
 Plugin 'vim-scripts/paredit.vim'
+""" Better highlighting
+Plugin 'guns/vim-clojure-highlight'
 
 " JS
 """ Node.js love
