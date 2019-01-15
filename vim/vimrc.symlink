@@ -28,7 +28,7 @@ Plugin 'mikewest/vimroom'
 " Friendlier editing of JSON
 Plugin 'elzr/vim-json'
 " includes SASS settings I like.
-Plugin 'tpope/vim-haml'
+"Plugin 'tpope/vim-haml'
 " Syntastic for error checking from the sidebar
 Plugin 'scrooloose/syntastic'
 
@@ -52,12 +52,12 @@ Plugin 'guns/vim-clojure-highlight'
 
 " JS
 """ Node.js love
-Plugin 'moll/vim-node'
+"Plugin 'moll/vim-node'
 """ JS highlighting + syntax
-Plugin 'pangloss/vim-javascript'
-Plugin 'jelera/vim-javascript-syntax'
+"Plugin 'pangloss/vim-javascript'
+"Plugin 'jelera/vim-javascript-syntax'
 """ Better autocomplete with YCM
-Plugin 'marijnh/tern_for_vim'
+"Plugin 'marijnh/tern_for_vim'
 
 """ END PLUGIN LIST
 
@@ -318,15 +318,15 @@ autocmd BufNewFile,BufRead *.hta set filetype=html
 
 " Javascript
 " ==========
-autocmd FileType javascript let tern_show_argument_hints = 'on_hold'
-autocmd FileType javascript set updatetime=1000
-autocmd filetype javascript let tern_show_signature_in_pum = 1
-autocmd filetype javascript let g:tern_request_timeout = 0.4
-autocmd filetype javascript highlight HangingOpenBraces ctermbg=red
+"autocmd FileType javascript let tern_show_argument_hints = 'on_hold'
+"autocmd FileType javascript set updatetime=1000
+"autocmd filetype javascript let tern_show_signature_in_pum = 1
+"autocmd filetype javascript let g:tern_request_timeout = 0.4
+"autocmd filetype javascript highlight HangingOpenBraces ctermbg=red
 "" Only apply this when in Normal mode
-autocmd InsertLeave javascript match HangingOpenBraces /^\s*{/
+"autocmd InsertLeave javascript match HangingOpenBraces /^\s*{/
 "" Clear the highlighting in Insert mode, because that's annoying
-autocmd InsertEnter javascript match HangingOpenBraces //
+"autocmd InsertEnter javascript match HangingOpenBraces //
 
 
 
