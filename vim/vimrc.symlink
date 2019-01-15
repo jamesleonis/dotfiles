@@ -45,6 +45,8 @@ Plugin 'tpope/vim-fireplace'
 Plugin 'vim-scripts/paredit.vim'
 """ Better highlighting
 Plugin 'guns/vim-clojure-highlight'
+""" cljfmt
+Plugin 'venantius/vim-cljfmt'
 
 " JS
 """ Node.js love
