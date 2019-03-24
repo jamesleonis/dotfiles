@@ -3,7 +3,7 @@
 DOTFILES=$(find $(cd `dirname $0`/..; pwd) ! -path "*.git*" -iname "*symlink")
 
 # I hate that this is a thing.
-if [ "$(uname)" == "Darwin" ]; then
+if [ "$(uname)" = "Darwin" ] ; then
   SED='sed -E'
 else
   SED='sed -r'
