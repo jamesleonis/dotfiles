@@ -20,4 +20,7 @@
   :nrepl {:extra-deps {nrepl {:mvn/version "RELEASE"}}
           :main-opts ["-m" "nrepl.cmdline"]}
 
-  :socket {:jvm-opts ["-Dclojure.server.repl={:port,41000,:accept,clojure.core.server/repl}"]}}}
+  :socket {:jvm-opts ["-Dclojure.server.repl={:port,41000,:accept,clojure.core.server/repl}"]}
+
+  :new {:extra-deps {seancorfield/clj-new {:mvn/version "0.7.8"}}
+        :main-opts ["-m" "clj-new.create"]}}}
