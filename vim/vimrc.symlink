@@ -337,6 +337,9 @@ autocmd BufNewFile,BufRead *.hta set filetype=html
 
 " Turn on spellcheck
 autocmd FileType markdown,text set spell
+autocmd FileType markdown,text set tabstop=4
+autocmd FileType markdown,text set shiftwidth=4
+autocmd FileType markdown,text set softtabstop=4
 autocmd FileType markdown,text let g:disable_insert_number_swap = 1
 
 
