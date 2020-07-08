@@ -23,3 +23,5 @@
 [merge]
   tool = vimdiff
   conflictstyle = diff3
+[pull]
+  rebase = false
