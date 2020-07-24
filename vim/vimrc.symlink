@@ -39,12 +39,19 @@ Plugin 'scrooloose/syntastic'
 "Plugin 'Valloric/YouCompleteMe'
 
 " Clojure
-""" Repl + interaction in vim
-Plugin 'tpope/vim-fireplace'
+if !has('nvim')
+  """ Fireplace for the REPL connection
+  Plugin 'tpope/vim-fireplace'
+  """ Better highlighting
+  Plugin 'guns/vim-clojure-highlight'
+else
+  """ Conjure for the REPL connection
+  Plugin 'Olical/conjure'
+  Plugin 'bakpakin/fennel.vim'
+  let g:conjure#mapping#prefix = "c"
+endif
 """ Slurp, Barf, and other structural editing
 Plugin 'vim-scripts/paredit.vim'
-""" Better highlighting
-Plugin 'guns/vim-clojure-highlight'
 """ cljfmt
 Plugin 'venantius/vim-cljfmt'
 
