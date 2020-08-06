@@ -44,6 +44,8 @@ if !has('nvim')
   Plugin 'tpope/vim-fireplace'
   """ Better highlighting
   Plugin 'guns/vim-clojure-highlight'
+  """ cljfmt
+  Plugin 'venantius/vim-cljfmt'
 else
   """ Conjure for the REPL connection
   Plugin 'Olical/conjure'
@@ -52,8 +54,6 @@ else
 endif
 """ Slurp, Barf, and other structural editing
 Plugin 'vim-scripts/paredit.vim'
-""" cljfmt
-Plugin 'venantius/vim-cljfmt'
 
 " JS
 """ Node.js love
