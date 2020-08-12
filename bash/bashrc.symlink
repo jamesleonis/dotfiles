@@ -91,19 +91,19 @@ alias tl="tmux list-sessions"
 alias ta="tmux attach"
 alias tat="tmux attach -t"
 
-function mkcd ()
+function mkcd
 {
     mkdir -p "$@" && eval cd "\"\$$#\"";
     pwd
 }
 
 # Make code searching less painful
-function find-in-code ()
+function find-in-code
 {
     grep -lir --exclude=*.{cod,obj,lib,exe,bsc,sbr,ilk,pdb,map,dll,log,swp,ncb,idb,vcxproj*,vcproj*} $1 *
 }
 
-function purge-docker ()
+function purge-docker
 {
   docker rm $(docker ps -aq)
   docker rmi -f $(docker images -a -q)
