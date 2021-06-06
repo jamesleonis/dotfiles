@@ -53,7 +53,7 @@ else
   let g:conjure#mapping#prefix = "c"
 endif
 """ Slurp, Barf, and other structural editing
-Plugin 'vim-scripts/paredit.vim'
+Plugin 'kovisoft/paredit'
 
 " JS
 """ Node.js love
@@ -242,8 +242,6 @@ set colorcolumn=80
 highlight TrailingWhitespace ctermbg=red
 autocmd InsertLeave * match TrailingWhitespace /\s\+$/
 autocmd InsertEnter * match TrailingWhitespace //
-
-
 
 " YouCompleteMe
 " =============
