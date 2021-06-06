@@ -7,11 +7,15 @@
 
   ; invoke with clojure -M:rebel
   ; NOTE: Don't use with the 'clj' or another readline-based system
-  :rebel {:extra-deps {com.bhauman/rebel-readline {:mvn/version "0.1.4"}}
+  :rebel {:extra-deps {com.bhauman/rebel-readline {:mvn/version "0.1.4"}
+                       org.clojure/tools.namespace {:mvn/version "RELEASE"}}
           :main-opts ["-m" "rebel-readline.main"]}
 
   :paravim {:extra-deps {paravim/paravim {:mvn/version "RELEASE"}}
             :main-opts ["-m" "paravim.start"]}
+
+  :reveal {:extra-deps {vlaaad/reveal {:mvn/version "1.2.186"}}
+           :main-opts ["-m" "vlaaad.reveal" "repl"]}
 
   :cider-clj {:extra-deps {cider/cider-nrepl {:mvn/version "RELEASE"}
                            org.clojure/tools.namespace {:mvn/version "RELEASE"}
@@ -22,5 +26,5 @@
 
   :socket {:jvm-opts ["-Dclojure.server.repl={:port,41000,:accept,clojure.core.server/repl}"]}
 
-  :new {:extra-deps {seancorfield/clj-new {:mvn/version "RELEASE"}}
-        :main-opts ["-m" "clj-new.create"]}}}
+  :new {:extra-deps {seancorfield/clj-new {:mvn/version "1.1.228"}}
+        :ns-default clj-new}}}
