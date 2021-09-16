@@ -10,17 +10,13 @@ Just a little bookkeeping for the plugins I have installed and those I'm experim
 * vim-ctrlp
 * vimroom
 * vim-json
-* vim-haml
-* YouCompleteMe
 * vim-fireplace
 * paredit
 * vim-clojure-static
 * vim-clojure-highlight
 * syntastic
-* vim-node
-* vim-javascript
-* vim-javascript-syntax
-* tern-for-vim
+* Conjure
+* fennel
 
 ### Deprecated
 
@@ -29,6 +25,18 @@ I've used these plugins in the past, but I don't need them at this time.
 #### General
 
 * vim-surround
+* vim-haml
+
+#### C++
+
+* YouCompleteMe
+
+#### Javascript
+
+* vim-node
+* vim-javascript
+* vim-javascript-syntax
+* tern-for-vim
 
 #### Ruby
 
