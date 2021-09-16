@@ -24,6 +24,18 @@
                           "--middleware" "[cider.nrepl/cider-middleware]"
                           "--interactive"]}
 
+  :jar {:replace-deps {com.github.seancorfield/depstar {:mvn/version "2.0.216"}}
+        :exec-fn hf.depstar/jar
+        :exec-args {}}
+
+  :uberjar {:replace-deps {com.github.seancorfield/depstar {:mvn/version "2.0.216"}}
+            :exec-fn hf.depstar/uberjar
+            :exec-args {:aot true}}
+
+  :deploy {:extra-deps {slipset/deps-deploy {:mvn/version "0.1.5"}}
+           :exec-fn deps-deploy.deps-deploy/deploy
+           :exec-args {:installer :remote}}
+
   :socket {:jvm-opts ["-Dclojure.server.repl={:port,41000,:accept,clojure.core.server/repl}"]}
 
   :new {:extra-deps {seancorfield/clj-new {:mvn/version "1.1.228"}}
