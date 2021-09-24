@@ -51,6 +51,9 @@ else
   Plugin 'Olical/conjure'
   Plugin 'bakpakin/fennel.vim'
   let g:conjure#mapping#prefix = "c"
+  let g:conjure#log#hud#width = 1.0
+  let g:conjure#log#hud#anchor = "SE"
+  let g:conjure#log#hud#height = 0.2
 endif
 """ Slurp, Barf, and other structural editing
 Plugin 'kovisoft/paredit'
