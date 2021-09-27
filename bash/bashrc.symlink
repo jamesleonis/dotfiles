@@ -3,6 +3,9 @@
 # different systems, so this must be as generic as possible.
 # Machine specific configuration should go into bashrc.local
 
+# If we aren't in an interactive shell, don't load this script
+[ -z "$PS1" ] && return
+
 export CLICOLOR=1
 export BASH_LOADED=1
 
