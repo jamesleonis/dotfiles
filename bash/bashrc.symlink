@@ -110,5 +110,10 @@ function purge_docker {
   docker rmi -f $(docker images -a -q)
 }
 
+# check and start the SSH Agent
+if [ -z "$SSH_AUTH_SOCK" ]; then
+  eval $(ssh-agent -s -t 1H) > /dev/null
+fi
+
 # Load in machine specific configurations
 [[ -s ~/.bashrc.local ]] && source ~/.bashrc.local
