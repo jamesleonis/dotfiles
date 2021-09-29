@@ -39,22 +39,23 @@ Plugin 'scrooloose/syntastic'
 "Plugin 'Valloric/YouCompleteMe'
 
 " Clojure
-if !has('nvim')
-  """ Fireplace for the REPL connection
-  Plugin 'tpope/vim-fireplace'
-  """ Better highlighting
-  Plugin 'guns/vim-clojure-highlight'
-  """ cljfmt
-  Plugin 'venantius/vim-cljfmt'
-else
-  """ Conjure for the REPL connection
+if has('nvim')
+  """ Conjure for the main REPL connection
   Plugin 'Olical/conjure'
   Plugin 'bakpakin/fennel.vim'
-  let g:conjure#mapping#prefix = "c"
+  let g:conjure#mapping#prefix = ","
   let g:conjure#log#hud#width = 1.0
   let g:conjure#log#hud#anchor = "SE"
   let g:conjure#log#hud#height = 0.2
 endif
+""" Fireplace for backup REPL connection and tooling
+Plugin 'tpope/vim-fireplace'
+""" Basic Clojure work
+Plugin 'clojure-vim/clojure.vim'
+""" Better highlighting
+Plugin 'jrdoane/vim-clojure-highlight'
+""" cljfmt
+Plugin 'venantius/vim-cljfmt'
 """ Slurp, Barf, and other structural editing
 Plugin 'kovisoft/paredit'
 
@@ -71,7 +72,6 @@ Plugin 'kovisoft/paredit'
 
 " Finish up the plugin initialization
 call vundle#end()
-filetype plugin on
 
 
 
@@ -81,11 +81,8 @@ filetype plugin on
 " Go go gadget SYNTAX HIGHLIGHTING!
 syntax on
 
-" Get VIM to detect the type of file in the editor
-filetype on
-
 " Get VIM to load filetype specific features and indentation styles
-filetype indent on
+filetype plugin indent on
 
 " My NEW favorite color scheme
 colorscheme jellybeans
