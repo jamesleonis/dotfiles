@@ -39,25 +39,22 @@ Plugin 'scrooloose/syntastic'
 "Plugin 'Valloric/YouCompleteMe'
 
 " Clojure
+""" Basic Clojure work
+Plugin 'clojure-vim/clojure.vim'
+""" Slurp, Barf, and other structural editing
+Plugin 'kovisoft/paredit'
+""" Fireplace for backup REPL connection and tooling
+"Plugin 'tpope/vim-fireplace'
+""" Better highlighting
+"Plugin 'jrdoane/vim-clojure-highlight'
+""" cljfmt
+"Plugin 'venantius/vim-cljfmt'
 if has('nvim')
   """ Conjure for the main REPL connection
   Plugin 'Olical/conjure'
   Plugin 'bakpakin/fennel.vim'
   let g:conjure#mapping#prefix = ","
-  let g:conjure#log#hud#width = 1.0
-  let g:conjure#log#hud#anchor = "SE"
-  let g:conjure#log#hud#height = 0.2
 endif
-""" Fireplace for backup REPL connection and tooling
-Plugin 'tpope/vim-fireplace'
-""" Basic Clojure work
-Plugin 'clojure-vim/clojure.vim'
-""" Better highlighting
-Plugin 'jrdoane/vim-clojure-highlight'
-""" cljfmt
-Plugin 'venantius/vim-cljfmt'
-""" Slurp, Barf, and other structural editing
-Plugin 'kovisoft/paredit'
 
 " JS
 """ Node.js love
@@ -283,6 +280,7 @@ set diffopt=filler,vertical
 " Clojure
 " =======
 autocmd BufNewFile,BufRead *.boot set filetype=clojure
+autocmd BufNewFile,BufRead,BufEnter *.cljc set filetype=clojure
 autocmd FileType clojure let g:paredit_electric_return = 1
 let g:clj_fmt_autosave = 0
 
