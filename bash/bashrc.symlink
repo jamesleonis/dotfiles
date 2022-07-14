@@ -111,8 +111,8 @@ function purge_docker {
 }
 
 # check and start the SSH Agent
-if [ -z "$SSH_AUTH_SOCK" ]; then
-  eval $(ssh-agent -s -t 1H) > /dev/null
+if [ -z "$SSH_AGENT_PID" ]; then
+  eval $(ssh-agent -s -t 4H) > /dev/null
 fi
 
 # Load in machine specific configurations
