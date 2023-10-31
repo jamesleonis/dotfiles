@@ -23,6 +23,8 @@ Plugin 'VundleVim/Vundle.vim'
 
 " CtrlP is a must have file utility
 Plugin 'ctrlpvim/ctrlp.vim'
+" Nix(OS) support
+Plugin 'LnL7/vim-nix'
 " great plugin for editing longform text
 Plugin 'mikewest/vimroom'
 " Friendlier editing of JSON
