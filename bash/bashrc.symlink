@@ -61,7 +61,8 @@ fi
 export HISTSIZE=1000000000
 export HISTFILESIZE=1000000
 shopt -s histappend
-export HISTIGNORE="&:[bf]g:exit:pwd:clear:[ \t]*"
+export HISTCONTROL=ignoredups
+export HISTIGNORE="[bf]g:exit:pwd:clear: *"
 
 # Add git autocomplete to bash
 source "$HOME/.bash/git-completion.bash"
