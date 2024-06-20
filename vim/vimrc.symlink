@@ -13,48 +13,44 @@ set nocompatible
 " Vundle requires turning filetype off temporarily
 filetype off
 
-set runtimepath+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" Vundle must be initialized first
-Plugin 'VundleVim/Vundle.vim'
+call plug#begin()
 
 """ BEGIN PLUGIN LIST
 
 " CtrlP is a must have file utility
-Plugin 'ctrlpvim/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 " Nix(OS) support
-Plugin 'LnL7/vim-nix'
+Plug 'LnL7/vim-nix'
 " great plugin for editing longform text
-Plugin 'mikewest/vimroom'
+Plug 'mikewest/vimroom'
 " Friendlier editing of JSON
-Plugin 'elzr/vim-json'
+Plug 'elzr/vim-json'
 " includes SASS settings I like.
-"Plugin 'tpope/vim-haml'
+"Plug 'tpope/vim-haml'
 " Syntastic for error checking from the sidebar
-Plugin 'scrooloose/syntastic'
+Plug 'scrooloose/syntastic'
 
 " C++
 """ Remember to compile with C support (in the YCM folder)
 """ ./install.py --clang-completer
 ""NOTE: Not in use anymore
-"Plugin 'Valloric/YouCompleteMe'
+"Plug 'Valloric/YouCompleteMe'
 
 " Clojure
 """ Basic Clojure work
-Plugin 'clojure-vim/clojure.vim'
+Plug 'clojure-vim/clojure.vim'
 """ Slurp, Barf, and other structural editing
-Plugin 'kovisoft/paredit'
+Plug 'kovisoft/paredit'
 """ Fireplace for backup REPL connection and tooling
-"Plugin 'tpope/vim-fireplace'
+"Plug 'tpope/vim-fireplace'
 """ Better highlighting
-"Plugin 'jrdoane/vim-clojure-highlight'
+"Plug 'jrdoane/vim-clojure-highlight'
 """ cljfmt
-"Plugin 'venantius/vim-cljfmt'
+"Plug 'venantius/vim-cljfmt'
 if has('nvim')
   """ Conjure for the main REPL connection
-  Plugin 'Olical/conjure'
-  Plugin 'bakpakin/fennel.vim'
+  Plug 'Olical/conjure'
+  Plug 'bakpakin/fennel.vim'
   let g:conjure#mapping#prefix = ","
   let g:conjure#log#hud#anchor = "SE"
   let g:conjure#log#hud#overlap_padding = 0.2
@@ -62,17 +58,17 @@ endif
 
 " JS
 """ Node.js love
-"Plugin 'moll/vim-node'
+"Plug 'moll/vim-node'
 """ JS highlighting + syntax
-"Plugin 'pangloss/vim-javascript'
-"Plugin 'jelera/vim-javascript-syntax'
+"Plug 'pangloss/vim-javascript'
+"Plug 'jelera/vim-javascript-syntax'
 """ Better autocomplete with YCM
-"Plugin 'marijnh/tern_for_vim'
+"Plug 'marijnh/tern_for_vim'
 
 """ END PLUGIN LIST
 
 " Finish up the plugin initialization
-call vundle#end()
+call plug#end()
 
 
 
