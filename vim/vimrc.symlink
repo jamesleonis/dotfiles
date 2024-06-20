@@ -49,7 +49,7 @@ Plug 'kovisoft/paredit'
 "Plug 'venantius/vim-cljfmt'
 if has('nvim')
   """ Conjure for the main REPL connection
-  Plug 'Olical/conjure'
+  Plug 'Olical/conjure', {'branch': 'develop'}
   Plug 'bakpakin/fennel.vim'
   let g:conjure#mapping#prefix = ","
   let g:conjure#log#hud#anchor = "SE"
