@@ -65,6 +65,11 @@ endif
 """ Better autocomplete with YCM
 "Plug 'marijnh/tern_for_vim'
 
+" SQL
+""" PostgreSQL
+Plug 'lifepillar/pgsql.vim'
+let g:sql_type_default = 'pgsql'
+
 """ END PLUGIN LIST
 
 " Finish up the plugin initialization
