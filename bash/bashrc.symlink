@@ -111,6 +111,11 @@ function purge_docker {
   docker rmi -f $(docker images -a -q)
 }
 
+# Print a file to standard out
+function out {
+  echo `<"$1"`
+}
+
 # check and start the SSH Agent
 if [ -z "$SSH_AGENT_PID" ]; then
   eval $(ssh-agent -s -t 4H) > /dev/null
