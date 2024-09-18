@@ -117,9 +117,12 @@ function out {
 }
 
 # check and start the SSH Agent
-if [ -z "$SSH_AGENT_PID" ]; then
-  eval $(ssh-agent -s -t 4H) > /dev/null
-fi
+# FIXME: This is not robust
+#if [ ! -f ~/.ssh-agent-environment ]; then
+#  ssh-agent -s -t 4H > ~/.ssh-agent-environment;
+#fi
+#
+#eval $(<~/.ssh-agent-environment) > /dev/null;
 
 # Load in machine specific configurations
 [[ -s ~/.bashrc.local ]] && source ~/.bashrc.local
