@@ -29,6 +29,8 @@ Plug 'elzr/vim-json'
 "Plug 'tpope/vim-haml'
 " Syntastic for error checking from the sidebar
 Plug 'scrooloose/syntastic'
+" Text alignment plugin
+Plug 'godlygeek/tabular'
 
 " C++
 """ Remember to compile with C support (in the YCM folder)
