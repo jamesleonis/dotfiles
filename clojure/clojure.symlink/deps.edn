@@ -45,7 +45,7 @@
             :exec-fn hf.depstar/uberjar
             :exec-args {:aot true}}
 
-  :deploy {:extra-deps {slipset/deps-deploy {:mvn/version "0.1.5"}}
+  :deploy {:extra-deps {slipset/deps-deploy {:mvn/version "RELEASE"}}
            :exec-fn deps-deploy.deps-deploy/deploy
            :exec-args {:installer :remote}}
 
