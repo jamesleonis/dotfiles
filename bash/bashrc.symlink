@@ -64,6 +64,9 @@ shopt -s histappend
 export HISTCONTROL=ignoredups
 export HISTIGNORE="[bf]g:exit:pwd:clear: *"
 
+# Set GPG console
+export GPG_TTY=$(tty)
+
 # Add git autocomplete to bash
 source "$HOME/.bash/git-completion.bash"
 
