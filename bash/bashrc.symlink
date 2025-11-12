@@ -43,7 +43,7 @@ fi
     # Change my terminal indicator if I'm root or not
     if [ $(id -u) -eq 0 ]; then
         # Red # for root and sudo
-        PS1="$PS1\[\033[0;31m\]#"
+        PS1="$PS1\[\033[0;31m\]\#"
     else
         # Green $ for regular use
         PS1="$PS1\[\033[0;32m\]$"
