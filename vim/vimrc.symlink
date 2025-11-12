@@ -100,6 +100,8 @@ let g:disable_insert_number_swap = 0
 " Functions
 " =========
 
+""" activate Relative and Non-relative number based on a flag
+""" can be disabled with 'g:disable_insert_number_swap' set to 1
 function! SetRelativeNumbers(flag_on)
   if g:disable_insert_number_swap == 0
     if a:flag_on
@@ -184,6 +186,8 @@ set smartindent
 set number
 set relativenumber
 
+""" Depending on the mode, I want to see relative numbers in Normal mode and
+""" only absolute line numbers in Insert mode
 autocmd InsertEnter * call SetRelativeNumbers(0)
 autocmd InsertLeave * call SetRelativeNumbers(1)
 
