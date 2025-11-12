@@ -10,9 +10,6 @@ set nocompatible
 " Plugins
 " =======
 
-" Vundle requires turning filetype off temporarily
-filetype off
-
 call plug#begin()
 
 """ BEGIN PLUGIN LIST
@@ -43,12 +40,7 @@ Plug 'godlygeek/tabular'
 Plug 'clojure-vim/clojure.vim'
 """ Slurp, Barf, and other structural editing
 Plug 'kovisoft/paredit'
-""" Fireplace for backup REPL connection and tooling
-"Plug 'tpope/vim-fireplace'
-""" Better highlighting
-"Plug 'jrdoane/vim-clojure-highlight'
-""" cljfmt
-"Plug 'venantius/vim-cljfmt'
+""" Clojure REPLs for both Vim and NeoVim
 if has('nvim')
   """ Conjure for the main REPL connection
   Plug 'Olical/conjure', {'branch': 'develop'}
@@ -56,6 +48,11 @@ if has('nvim')
   let g:conjure#mapping#prefix = ","
   let g:conjure#log#hud#anchor = "SE"
   let g:conjure#log#hud#overlap_padding = 0.2
+else
+  """ Fireplace for backup REPL connection and fireplace-based tooling
+  Plug 'tpope/vim-fireplace'
+  Plug 'jrdoane/vim-clojure-highlight'
+  Plug 'venantius/vim-cljfmt'
 endif
 
 " JS
@@ -74,7 +71,6 @@ let g:sql_type_default = 'pgsql'
 
 """ END PLUGIN LIST
 
-" Finish up the plugin initialization
 call plug#end()
 
 
