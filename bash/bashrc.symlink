@@ -116,7 +116,7 @@ function purge_docker {
 
 # Print a file to standard out
 function out {
-  echo `<"$1"`
+  echo "`<"$1"`"
 }
 
 # check and start the SSH Agent
