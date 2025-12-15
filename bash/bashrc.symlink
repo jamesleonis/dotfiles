@@ -119,13 +119,5 @@ function out {
   echo "`<"$1"`"
 }
 
-# check and start the SSH Agent
-# FIXME: This is not robust
-#if [ ! -f ~/.ssh-agent-environment ]; then
-#  ssh-agent -s -t 4H > ~/.ssh-agent-environment;
-#fi
-#
-#eval $(<~/.ssh-agent-environment) > /dev/null;
-
 # Load in machine specific configurations
 [[ -s ~/.bashrc.local ]] && source ~/.bashrc.local
