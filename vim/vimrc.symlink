@@ -109,6 +109,8 @@ function! SetRelativeNumbers(flag_on)
     else
       set norelativenumber
     endif
+  else
+    set norelativenumber
   endif
 endfunction
 
@@ -345,12 +347,17 @@ autocmd BufNewFile,BufRead *.hta set filetype=html
 " Markdown
 " ========
 
+" TODO files are treated as text
+autocmd BufNewFile,BufRead *.todo set filetype=text
+
 " Turn on spellcheck
 autocmd FileType markdown,text set spell
 autocmd FileType markdown,text set tabstop=4
 autocmd FileType markdown,text set shiftwidth=4
 autocmd FileType markdown,text set softtabstop=4
 autocmd FileType markdown,text let g:disable_insert_number_swap = 1
+autocmd FileType markdown,text set norelativenumber
+autocmd FileType markdown,text set nonumber
 
 
 
