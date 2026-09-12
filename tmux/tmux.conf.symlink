@@ -8,3 +8,6 @@ bind-key ` last-window
 bind-key a send-prefix
 
 set -g base-index 1
+
+# NeoVIM wants focus-events enabled for autoread
+set-option -g focus-events on
