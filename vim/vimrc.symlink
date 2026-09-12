@@ -17,7 +17,7 @@ call plug#begin()
 " CtrlP is a must have file utility
 Plug 'ctrlpvim/ctrlp.vim'
 " Nix(OS) support
-Plug 'LnL7/vim-nix'
+"Plug 'LnL7/vim-nix'
 " great plugin for editing longform text
 Plug 'mikewest/vimroom'
 " Friendlier editing of JSON
