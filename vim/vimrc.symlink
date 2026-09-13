@@ -43,7 +43,7 @@ Plug 'kovisoft/paredit'
 """ Clojure REPLs for both Vim and NeoVim
 if has('nvim')
   """ Conjure for the main REPL connection
-  Plug 'Olical/conjure', {'branch': 'develop'}
+  Plug 'Olical/conjure'
   Plug 'bakpakin/fennel.vim'
   let g:conjure#mapping#prefix = ","
   let g:conjure#log#hud#anchor = "SE"
