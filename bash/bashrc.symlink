@@ -22,10 +22,16 @@ elif [[ $TERM == screen ]]; then
   TERM=screen-256color
 fi
 
-# Add my bin directory to the path
-bin_dir="$HOME/bin"
-if [ -d $bin_dir ]; then
-    export PATH="$bin_dir:$PATH"
+# Add my local bin directory to the path
+LOCAL_BIN_DIR="$HOME/bin"
+if [ -d $LOCAL_BIN_DIR ]; then
+    export PATH="$LOCAL_BIN_DIR:$PATH"
+fi
+
+# Add my dotfiles bin directory to the path
+DOTFILES_BIN_DIR="$HOME/bin"
+if [ -d $DOTFILES_BIN_DIR ]; then
+    export PATH="$DOTFILES_BIN_DIR:$PATH"
 fi
 
 # Display prompt (PS1) configuration
