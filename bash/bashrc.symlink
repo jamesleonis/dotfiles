@@ -29,7 +29,7 @@ if [ -d $LOCAL_BIN_DIR ]; then
 fi
 
 # Add my dotfiles bin directory to the path
-DOTFILES_BIN_DIR="$HOME/bin"
+DOTFILES_BIN_DIR="$HOME/.bash/bin"
 if [ -d $DOTFILES_BIN_DIR ]; then
     export PATH="$DOTFILES_BIN_DIR:$PATH"
 fi
