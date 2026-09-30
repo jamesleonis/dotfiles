@@ -20,8 +20,8 @@ tmux send-keys -t "$SESSION_NAME:2" "nvim" C-m
 # on the left and status on the right. Alternatively I'll view a staged diff
 # on the left and the commit message (in VIM) on the right.
 tmux new-window -t "$SESSION_NAME:3" -n "GIT"
-tmux split-pane -t "$SESSION_NAME:3" -h
 tmux send-keys -t "$SESSION_NAME:3" "git log --oneline --decorate --graph" C-m
+tmux split-pane -t "$SESSION_NAME:3" -h
 tmux send-keys -t "$SESSION_NAME:3.1" "git status" C-m
 
 # Default to my editor screen
