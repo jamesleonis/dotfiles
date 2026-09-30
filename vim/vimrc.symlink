@@ -133,8 +133,10 @@ set visualbell
 set noerrorbells
 
 " Escape key delay is killing me!
+set timeout
+set ttimeout
 set timeoutlen=1000
-set ttimeoutlen=100
+set ttimeoutlen=50
 
 " Show the state of commands being entered
 set showcmd
