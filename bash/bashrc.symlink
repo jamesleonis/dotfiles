@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # James' bashrc file
 # This is the portable configuration that is supposed to work across my
 # different systems, so this must be as generic as possible.
