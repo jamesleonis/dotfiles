@@ -1,4 +1,7 @@
+#!/usr/bin/env bash
+
 # James' inputrc file
+
 $include /etc/inputrc
 
 # don't ask me about how many tab completion items there are unless it's truely huge
