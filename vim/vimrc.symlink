@@ -22,8 +22,6 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mikewest/vimroom'
 " Friendlier editing of JSON
 Plug 'elzr/vim-json'
-" includes SASS settings I like.
-"Plug 'tpope/vim-haml'
 " Syntastic for error checking from the sidebar
 Plug 'scrooloose/syntastic'
 " Text alignment plugin
@@ -55,13 +53,13 @@ else
   Plug 'venantius/vim-cljfmt'
 endif
 
-" JS
-""" Node.js love
+"" JS
+"""" Node.js love
 "Plug 'moll/vim-node'
-""" JS highlighting + syntax
+"""" JS highlighting + syntax
 "Plug 'pangloss/vim-javascript'
 "Plug 'jelera/vim-javascript-syntax'
-""" Better autocomplete with YCM
+"""" Better autocomplete with YCM
 "Plug 'marijnh/tern_for_vim'
 
 " SQL
@@ -93,9 +91,12 @@ highlight Pmenu ctermbg=238 guibg=#202020
 highlight PmenuSel gui=bold guibg=#303030 guifg=White
 
 
+
 " Globals
 " =======
 let g:disable_insert_number_swap = 0
+
+
 
 " Functions
 " =========
@@ -113,6 +114,7 @@ function! SetRelativeNumbers(flag_on)
     set norelativenumber
   endif
 endfunction
+
 
 
 " Backup and swap files
