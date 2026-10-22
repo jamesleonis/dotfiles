@@ -1,10 +1,17 @@
+# Am I out of touch to use ` as my prefix? No! It's the kids who are wrong!
+# I set double-tapping the prefix <`> to swap between two most recent windows
+# and set the base index to 1. This puts all my most frequent actions
+# conveniently on one row.
 set-option -g prefix `
 
 # I need VIM to respond faster.
 set -s escape-time 0
 
+# Unbinding the default prefix lets me nest vanilla tmux sessions, such as SSH
 unbind-key C-b
+# Hit ` twice to switch windows. Also can be done with prefix-p as normal
 bind-key ` last-window
+# Send an actual ` when I need one, like when I type these comments
 bind-key a send-prefix
 
 set -g default-terminal "tmux-256color"
@@ -12,6 +19,7 @@ set -g default-terminal "tmux-256color"
 # Mocha brown so I can tell the difference between nested tmux sessions
 set -g status-style 'bg=#4f3d31 fg=#efd2bf'
 
+# Puts all the windows right next to the prefix key. Great ergonomics
 set -g base-index 1
 
 # NeoVIM wants focus-events enabled for autoread
