@@ -9,6 +9,9 @@ bind-key a send-prefix
 
 set -g default-terminal "tmux-256color"
 
+# Mocha brown so I can tell the difference between nested tmux sessions
+set -g status-style 'bg=#4f3d31 fg=#efd2bf'
+
 set -g base-index 1
 
 # NeoVIM wants focus-events enabled for autoread
